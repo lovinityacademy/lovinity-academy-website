@@ -10,31 +10,17 @@
 <link rel="icon" type="image/png" href="./favicon.png?v=3">
 <link rel="apple-touch-icon" href="./favicon.png?v=3">
 <style>
-  
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.brand img {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
 :root{--gold:#b9954b;--dark:#202020;--cream:#faf8f3;--line:#e7ddca}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;color:var(--dark);line-height:1.8;background:#fff}
 header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);padding:12px 5%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
-.brand{color:var(--gold);font-family:Georgia,serif;font-size:19px;letter-spacing:1px;font-weight:bold}
+.brand{display:flex;align-items:center;gap:10px;color:var(--gold);font-family:Georgia,serif;font-size:19px;letter-spacing:1px;font-weight:bold}
+.brand img{width:38px;height:38px;object-fit:contain;flex-shrink:0}
 nav{display:flex;flex-wrap:wrap;gap:13px}
 nav a{color:var(--dark);font-size:11px;text-decoration:none;letter-spacing:1px}
 nav a:hover{color:var(--gold)}
 .hero{min-height:570px;background:linear-gradient(145deg,#fff,#f7f2e7);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:55px 20px}
-.hero img{width:min(310px,75vw);height:auto;margin-bottom:18px}
 .hero h1{font-family:Georgia,serif;font-size:clamp(29px,5vw,50px);font-weight:normal;letter-spacing:2px;margin:10px 0}
 .tagline{font-family:Georgia,serif;letter-spacing:4px;color:var(--gold)}
 .hero-sub{font-size:14px;margin:18px 0}
@@ -51,6 +37,7 @@ h2{font-family:Georgia,serif;text-align:center;letter-spacing:3px;font-size:27px
 .card{background:white;border:1px solid var(--line);padding:28px 24px;border-radius:5px}
 .card h3{font-family:Georgia,serif;font-size:22px;font-weight:normal;color:var(--gold);margin:0 0 8px}
 .card .jp{font-size:14px}
+.course-photo{display:block;width:100%;height:190px;object-fit:cover;border-radius:5px;margin-bottom:18px}
 .chip{display:inline-block;border:1px solid var(--line);padding:3px 9px;font-size:11px;margin:5px 4px 8px 0}
 .price{font-family:Georgia,serif;font-size:23px;font-weight:bold;margin-top:14px}
 table{width:100%;border-collapse:collapse;margin-top:25px;font-size:14px}
@@ -72,17 +59,16 @@ section{padding:55px 18px}
 .section-alt section{padding:55px 18px}
 table{font-size:12px}
 th,td{padding:11px 6px}
+.course-photo{height:200px}
 }
 </style>
 </head>
 <body>
 <header>
-  
-<div class="brand">
-  <img src="lovinity-logo.png" alt="Lovinity Academy ロゴ">
-  <span>Lovinity Academy</span>
-</div>
-
+  <div class="brand">
+    <img src="lovinity-logo.png" alt="Lovinity Academy ロゴ">
+    <span>Lovinity Academy</span>
+  </div>
   <nav>
     <a href="#about">ABOUT</a>
     <a href="#courses">COURSES</a>
@@ -98,22 +84,20 @@ th,td{padding:11px 6px}
   <p class="hero-sub">学ぶ。創る。輝く。<br>一人ひとりの可能性を未来へ。</p>
   <a class="button" href="#courses">EXPLORE COURSES</a>
 </div>
-
 <section id="about">
   <h2>ABOUT US</h2>
   <div class="gold-line"></div>
   <p class="center">Lovinity Academyは、語学・アート・演劇・芸能を通して、<br>一人ひとりの個性と可能性を育む学びの場です。</p>
   <p class="center muted">子どもから大人まで。<br>新しい世界に出会い、自分らしく輝く未来へ。</p>
 </section>
-
 <div class="section-alt">
 <section id="courses">
   <h2>ONLINE LESSONS</h2>
   <div class="gold-line"></div>
   <p class="center">オンライン語学レッスン</p>
-
   <div class="grid">
     <article class="card">
+      <img class="course-photo" src="course-english.jpg.PNG" alt="オンライン英語のレッスンイメージ" loading="lazy">
       <h3>Online English</h3>
       <p class="jp">オンライン英語</p>
       <span class="chip">ジュニア</span>
@@ -125,8 +109,8 @@ th,td{padding:11px 6px}
       <p>大人</p>
       <div class="price">¥9,900 / 月</div>
     </article>
-
     <article class="card">
+      <img class="course-photo" src="course-korean.jpg.PNG" alt="オンライン韓国語のレッスンイメージ" loading="lazy">
       <h3>Online Korean</h3>
       <p class="jp">オンライン韓国語</p>
       <span class="chip">全年齢対象</span>
@@ -135,8 +119,8 @@ th,td{padding:11px 6px}
       <p>韓国語の基礎から日常会話、旅行や留学に向けた学習まで、目的に合わせて学べます。</p>
       <div class="price">¥12,000 / 月</div>
     </article>
-
     <article class="card">
+      <img class="course-photo" src="course-japanese.jpg.PNG" alt="オンライン日本語のレッスンイメージ" loading="lazy">
       <h3>Online Japanese</h3>
       <p class="jp">オンライン日本語</p>
       <span class="chip">キッズ</span>
@@ -150,45 +134,41 @@ th,td{padding:11px 6px}
       <div class="price">¥8,800 / 月</div>
     </article>
   </div>
-
   <h2 style="margin-top:75px">IN-PERSON CLASSES</h2>
   <div class="gold-line"></div>
   <p class="center">対面レッスン</p>
-
   <div class="grid">
     <article class="card">
+      <img class="course-photo" src="course-art.jpg.PNG" alt="アートと英語のレッスンイメージ" loading="lazy">
       <h3>Art de English</h3>
       <p>アート × 英語</p>
       <p>アートを通して創造力を育み、英語に自然と親しむクラス。</p>
       <div class="price">¥9,900 / 月</div>
     </article>
-
     <article class="card">
+      <img class="course-photo" src="course-kids-act.jpg.PNG" alt="演劇レッスンのイメージ" loading="lazy">
       <h3>Kids Act Performance</h3>
       <p>演劇・パフォーマンス</p>
       <p>演劇や表現活動を通じて、想像力、自信、伝える力を育みます。</p>
       <div class="price">¥16,500 / 月</div>
     </article>
-
     <article class="card">
+      <img class="course-photo" src="course-entertainment.jpg.PNG" alt="芸能レッスンのイメージ" loading="lazy">
       <h3>Entertainment Course</h3>
       <p>芸能コース（ボーカル・ダンス・演技・語学）</p>
       <p>芸能・エンターテインメントの世界で必要な表現力や技術を磨きます。</p>
       <div class="price">¥29,800 / 月</div>
     </article>
   </div>
+  <p class="center muted">※掲載写真はレッスンのイメージです。</p>
 </section>
 </div>
-
 <section id="prices">
   <h2>LESSON FEES</h2>
   <div class="gold-line"></div>
   <p class="center">月額料金一覧</p>
-
   <table>
-    <thead>
-      <tr><th>コース</th><th>月額料金</th></tr>
-    </thead>
+    <thead><tr><th>コース</th><th>月額料金</th></tr></thead>
     <tbody>
       <tr><td>オンライン英語｜ジュニア</td><td>¥8,800</td></tr>
       <tr><td>オンライン英語｜大人</td><td>¥9,900</td></tr>
@@ -200,16 +180,13 @@ th,td{padding:11px 6px}
       <tr><td>芸能コース</td><td>¥29,800</td></tr>
     </tbody>
   </table>
-
   <p class="muted">※表示価格は月額です。入会金、教材費、税区分等の詳細は別途ご案内します。</p>
 </section>
-
 <div class="section-alt">
 <section id="schedule">
   <h2>LESSON SCHEDULE</h2>
   <div class="gold-line"></div>
   <p class="center">レッスンスケジュール</p>
-
   <div class="schedule-grid">
     <article class="card">
       <h3>オンラインレッスン</h3>
@@ -219,25 +196,18 @@ th,td{padding:11px 6px}
       <p>毎週固定の曜日・時間で受講できます。</p>
       <p class="muted">※講師の空き状況などにより、ご希望に添えない場合があります。受講日時は調整のうえ確定します。</p>
     </article>
-
     <article class="card">
       <h3>Art de English</h3>
       <p><strong>毎週土曜日</strong></p>
       <p class="schedule-time">10:00〜11:00</p>
       <p>アート × 英語の対面クラス</p>
     </article>
-
     <article class="card">
       <h3>Kids Act Performance</h3>
       <p><strong>毎週土曜日</strong></p>
-      <p class="schedule-time">
-        13:00〜14:00<br>
-        14:00〜15:00<br>
-        15:00〜16:00
-      </p>
+      <p class="schedule-time">13:00〜14:00<br>14:00〜15:00<br>15:00〜16:00</p>
       <p>演劇・パフォーマンスの対面クラス</p>
     </article>
-
     <article class="card">
       <h3>芸能コース</h3>
       <p><strong>月曜日〜金曜日</strong></p>
@@ -245,35 +215,21 @@ th,td{padding:11px 6px}
       <p>ボーカル・ダンス・演技・語学</p>
     </article>
   </div>
-
   <p class="center muted">※開講日時は変更となる場合があります。体験レッスンの日程はお申し込み後にご案内します。</p>
 </section>
 </div>
-
 <section id="trial">
   <h2>TRIAL LESSON</h2>
   <div class="gold-line"></div>
-
   <div class="notice">
     <h3>体験レッスン・お問い合わせ</h3>
     <p>あなたに合ったコースで、<br>新しい学びを始めてみませんか？</p>
     <p>ご希望のコースと体験日時をお選びいただき、お気軽にお申し込みください。</p>
-
-    <a class="button"
-       href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
-       target="_blank"
-       rel="noopener noreferrer">
-      体験レッスンを申し込む
-    </a>
-
-    <p class="muted">
-      ※お申し込み後、担当者より日程調整のご連絡をいたします。<br>
-      ※フォーム送信時点では予約は確定しません。
-    </p>
+    <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform" target="_blank" rel="noopener noreferrer">体験レッスンを申し込む</a>
+    <p class="muted">※お申し込み後、担当者より日程調整のご連絡をいたします。<br>※フォーム送信時点では予約は確定しません。</p>
   </div>
 </section>
 </main>
-
 <footer>
   <h2>Lovinity Academy</h2>
   <p>Dream, Create, Shine.</p>
