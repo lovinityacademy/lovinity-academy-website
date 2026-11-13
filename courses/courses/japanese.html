@@ -1,0 +1,1084 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lovinity Academyのオンライン日本語レッスン。外国につながりのあるお子さま向けグループレッスンと、大人向けマンツーマンレッスン。楽しく学び、話す自信を育てます。">
+<title>オンライン日本語 | Lovinity Academy</title>
+<link rel="icon" href="../lovinity-logo.png">
+<link rel="apple-touch-icon" href="../lovinity-logo.png">
+
+<style>
+:root {
+  --gold:#b9954b;
+  --gold-dark:#8c6c32;
+  --ink:#252525;
+  --muted:#666;
+  --cream:#faf8f3;
+  --mint:#edf6f0;
+  --peach:#fff1e9;
+  --blue:#edf5fa;
+  --line:#e8dfcf;
+  --white:#fff;
+}
+
+* { box-sizing:border-box; }
+
+html { scroll-behavior:smooth; }
+
+body {
+  margin:0;
+  color:var(--ink);
+  background:#fff;
+  font-family:"Helvetica Neue","Hiragino Kaku Gothic ProN",
+              "Yu Gothic",Arial,sans-serif;
+  line-height:1.85;
+}
+
+a { color:inherit; }
+img { max-width:100%; }
+section { scroll-margin-top:105px; }
+
+.container {
+  width:min(1120px,90%);
+  margin:auto;
+}
+
+.section { padding:95px 0; }
+.cream { background:var(--cream); }
+.mint { background:var(--mint); }
+
+.eyebrow {
+  display:block;
+  color:var(--gold-dark);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:3px;
+  margin-bottom:14px;
+}
+
+.section-heading {
+  text-align:center;
+  margin-bottom:48px;
+}
+
+.section-heading h2 {
+  font:normal clamp(29px,4vw,43px)/1.45
+       Georgia,"Yu Mincho",serif;
+  margin:0 0 12px;
+}
+
+.section-heading p {
+  color:var(--muted);
+  font-size:14px;
+}
+
+.gold-line {
+  width:48px;
+  height:2px;
+  background:var(--gold);
+  margin:18px auto;
+}
+
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:50px;
+  padding:12px 27px;
+  border:1px solid var(--gold);
+  border-radius:4px;
+  background:var(--gold);
+  color:#fff;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+  transition:.2s;
+}
+
+.btn:hover {
+  background:var(--gold-dark);
+  border-color:var(--gold-dark);
+}
+
+.btn-outline {
+  background:transparent;
+  color:var(--gold-dark);
+}
+
+.btn-outline:hover { color:#fff; }
+
+.note {
+  color:#777;
+  font-size:12px;
+}
+
+/* HEADER */
+
+header {
+  position:sticky;
+  top:0;
+  z-index:100;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:15px;
+  padding:12px 5%;
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(12px);
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--gold);
+  text-decoration:none;
+  font:bold 19px Georgia,serif;
+  letter-spacing:1px;
+}
+
+.brand img {
+  width:38px;
+  height:38px;
+  object-fit:contain;
+}
+
+header nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+}
+
+header nav a {
+  font-size:11px;
+  letter-spacing:1px;
+  text-decoration:none;
+}
+
+header nav a:hover { color:var(--gold); }
+
+/* HERO */
+
+.hero {
+  background:linear-gradient(
+    125deg,#fff 0%,#faf8f3 48%,#eaf5ee 100%
+  );
+}
+
+.hero-inner {
+  width:min(1220px,92%);
+  min-height:620px;
+  margin:auto;
+  padding:65px 0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.hero h1 {
+  font:normal clamp(35px,5vw,62px)/1.5
+       Georgia,"Yu Mincho",serif;
+  margin:12px 0 20px;
+}
+
+.hero h1 em {
+  font-style:normal;
+  color:var(--gold-dark);
+}
+
+.hero p {
+  color:#555;
+  font-size:15px;
+  line-height:2.15;
+}
+
+.hero-actions {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.tags {
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  margin-top:27px;
+}
+
+.tags span {
+  padding:5px 13px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:30px;
+  font-size:12px;
+}
+
+.hero-visual { position:relative; }
+
+.hero-visual img {
+  display:block;
+  width:100%;
+  height:490px;
+  object-fit:cover;
+  border-radius:170px 170px 8px 8px;
+  box-shadow:0 20px 45px #314b3818;
+}
+
+.sticker {
+  position:absolute;
+  bottom:-15px;
+  left:-20px;
+  padding:17px 24px;
+  background:#fff;
+  border:1px solid #e5eee6;
+  border-radius:7px;
+  box-shadow:0 10px 30px #00000010;
+}
+
+.sticker strong {
+  display:block;
+  color:var(--gold-dark);
+  font:normal 23px Georgia,serif;
+}
+
+.sticker span {
+  color:#777;
+  font-size:11px;
+}
+
+/* STATS */
+
+.stats {
+  border-bottom:1px solid var(--line);
+}
+
+.stats-inner {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+}
+
+.stat {
+  text-align:center;
+  padding:28px 10px;
+}
+
+.stat + .stat {
+  border-left:1px solid var(--line);
+}
+
+.stat strong {
+  display:block;
+  color:var(--gold-dark);
+  font:normal clamp(25px,4vw,37px) Georgia,serif;
+}
+
+.stat span {
+  font-size:12px;
+  color:#666;
+}
+
+/* INTRO */
+
+.intro {
+  max-width:780px;
+  margin:auto;
+  text-align:center;
+}
+
+.intro h2 {
+  font:normal clamp(26px,4vw,38px)/1.65
+       Georgia,"Yu Mincho",serif;
+  margin:0 0 25px;
+}
+
+.intro p {
+  color:#555;
+  font-size:15px;
+  line-height:2.3;
+}
+
+/* COURSES */
+
+.course {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.course + .course { margin-top:100px; }
+
+.course.reverse .course-photo { order:2; }
+.course.reverse .course-copy { order:1; }
+
+.course-photo img {
+  display:block;
+  width:100%;
+  height:440px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.course-copy h3 {
+  font:normal clamp(28px,4vw,40px)/1.5
+       Georgia,"Yu Mincho",serif;
+  margin:8px 0 16px;
+}
+
+.course-copy p {
+  color:#555;
+  font-size:14px;
+}
+
+.course-points {
+  list-style:none;
+  padding:0;
+  margin:23px 0;
+}
+
+.course-points li {
+  padding:10px 0;
+  border-bottom:1px solid var(--line);
+  font-size:14px;
+}
+
+.course-points li::before {
+  content:"✓";
+  color:var(--gold-dark);
+  font-weight:bold;
+  margin-right:10px;
+}
+
+.price-box {
+  margin:25px 0;
+  padding:23px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-left:4px solid var(--gold);
+}
+
+.price-box strong {
+  display:block;
+  color:var(--gold-dark);
+  font:bold 36px Georgia,serif;
+}
+
+.price-box small {
+  font:normal 12px sans-serif;
+}
+
+.price-box span {
+  display:block;
+  color:#666;
+  font-size:12px;
+}
+
+/* VALUES */
+
+.value-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.value-card {
+  padding:32px 25px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  text-align:center;
+}
+
+.value-number {
+  color:var(--gold);
+  font:normal 35px Georgia,serif;
+}
+
+.value-card h3 {
+  font-size:17px;
+  margin:12px 0;
+}
+
+.value-card p {
+  color:#666;
+  font-size:13px;
+}
+
+/* MESSAGE */
+
+.message {
+  padding:70px 20px;
+  text-align:center;
+  background:linear-gradient(120deg,#eaf6ee,#fff1e9);
+}
+
+.message p {
+  font:normal clamp(23px,4vw,38px)/1.7
+       Georgia,"Yu Mincho",serif;
+  margin:10px 0;
+}
+
+.message span {
+  color:#748c79;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+/* INFORMATION */
+
+.info-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+
+.info-card {
+  padding:30px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:7px;
+}
+
+.info-card h3 {
+  color:var(--gold-dark);
+  font-size:19px;
+  margin:0 0 18px;
+}
+
+.info-row {
+  display:grid;
+  grid-template-columns:105px 1fr;
+  gap:14px;
+  padding:12px 0;
+  border-bottom:1px solid #eee;
+  font-size:13px;
+}
+
+.info-row:last-child { border-bottom:0; }
+.info-row span { color:#666; }
+
+/* TRIAL */
+
+.cta {
+  padding:95px 20px;
+  text-align:center;
+  background:linear-gradient(135deg,#f5f0e5,#e9f4ef);
+}
+
+.cta h2 {
+  font:normal clamp(29px,4vw,43px)/1.6
+       Georgia,"Yu Mincho",serif;
+  margin:12px 0 18px;
+}
+
+.cta p {
+  color:#555;
+  font-size:14px;
+}
+
+.cta .btn { margin:20px 0 14px; }
+
+/* FOOTER */
+
+footer {
+  padding:55px 20px;
+  text-align:center;
+  color:#fff;
+  background:#252525;
+}
+
+.footer-brand {
+  color:var(--gold);
+  font:bold 24px Georgia,serif;
+}
+
+.tagline {
+  color:#ddd;
+  font:normal 14px Georgia,serif;
+  letter-spacing:2px;
+}
+
+.footer-links {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:18px;
+  margin:25px 0;
+}
+
+footer a {
+  color:#ddd;
+  text-decoration:none;
+  font-size:12px;
+}
+
+footer a:hover { color:var(--gold); }
+footer small { color:#aaa; }
+
+/* RESPONSIVE */
+
+@media(max-width:750px) {
+  header { justify-content:center; }
+
+  header nav {
+    justify-content:center;
+    gap:11px;
+  }
+
+  .hero-inner {
+    grid-template-columns:1fr;
+    gap:36px;
+    padding:55px 0 65px;
+  }
+
+  .hero-copy { text-align:center; }
+
+  .hero-actions,
+  .tags { justify-content:center; }
+
+  .hero-visual {
+    width:90%;
+    margin:auto;
+  }
+
+  .hero-visual img {
+    height:350px;
+    border-radius:140px 140px 8px 8px;
+  }
+
+  .sticker { left:-10px; }
+  .section { padding:65px 0; }
+
+  .course,
+  .info-grid {
+    grid-template-columns:1fr;
+  }
+
+  .course { gap:25px; }
+  .course + .course { margin-top:75px; }
+
+  .course.reverse .course-photo,
+  .course.reverse .course-copy {
+    order:initial;
+  }
+
+  .course-photo img { height:300px; }
+  .value-grid { grid-template-columns:1fr; }
+  .info-card { padding:24px 20px; }
+  .stat { padding:20px 5px; }
+  .stat span { font-size:10px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  .btn { transition:none; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <a class="brand" href="../index.html">
+    <img src="../lovinity-logo.png" alt="Lovinity Academy ロゴ">
+    <span>Lovinity Academy</span>
+  </a>
+
+  <nav>
+    <a href="../index.html#about">ABOUT</a>
+    <a href="../index.html#courses">COURSES</a>
+    <a href="../index.html#why">WHY LOVINITY?</a>
+    <a href="../index.html#prices">PRICE</a>
+    <a href="../index.html#schedule">SCHEDULE</a>
+    <a href="../index.html#trial">TRIAL</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+
+    <div class="hero-copy">
+      <span class="eyebrow">LOVINITY ONLINE JAPANESE</span>
+
+      <h1>
+        ことばがつながる。<br>
+        <em>世界がひろがる。</em>
+      </h1>
+
+      <p>
+        伝えたい気持ちが、ことばになる。<br>
+        「話せた！」が、新しい自信になる。<br><br>
+        子どもから大人まで、<br>
+        一人ひとりの成長を応援する<br>
+        オンライン日本語レッスン。
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#trial">
+          無料体験レッスン →
+        </a>
+
+        <a class="btn btn-outline" href="#courses">
+          コースを見る
+        </a>
+      </div>
+
+      <div class="tags">
+        <span>キッズグループ</span>
+        <span>大人マンツーマン</span>
+        <span>オンライン</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img
+        src="../course-japanese.jpg.PNG"
+        alt="オンライン日本語レッスンのイメージ"
+        fetchpriority="high">
+
+      <div class="sticker">
+        <strong>Talk. Connect. Grow.</strong>
+        <span>日本語で、もっとつながろう。</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="container stats-inner">
+
+    <div class="stat">
+      <strong>30 min</strong>
+      <span>1回30分</span>
+    </div>
+
+    <div class="stat">
+      <strong>8 lessons</strong>
+      <span>月8回</span>
+    </div>
+
+    <div class="stat">
+      <strong>2 styles</strong>
+      <span>キッズ・大人</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container intro">
+
+    <span class="eyebrow">OUR LEARNING STYLE</span>
+
+    <h2>
+      日本語を学ぶことは、<br>
+      人とつながること。
+    </h2>
+
+    <p>
+      Lovinity Academyでは、<br>
+      日本語を覚えるだけでなく、<br>
+      <strong>自分の気持ちを伝える力</strong>を
+      大切にしています。
+    </p>
+
+    <p>
+      お子さまには、友だちと学ぶ楽しさを。<br>
+      大人の方には、生活や仕事で役立つ会話力を。
+    </p>
+
+    <p>
+      一人ひとりの目標に合わせて、<br>
+      日本語で話す喜びを育てていきます。
+    </p>
+
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="section cream" id="courses">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">OUR JAPANESE COURSES</span>
+      <h2>Find Your Japanese Class.</h2>
+      <div class="gold-line"></div>
+      <p>年齢や目的に合わせた2つの学び方。</p>
+    </div>
+
+    <!-- KIDS -->
+    <article class="course" id="kids">
+
+      <div class="course-photo">
+        <img
+          src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+          alt="子どもたちが一緒に学ぶイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-japanese.jpg.PNG';">
+      </div>
+
+      <div class="course-copy">
+        <span class="eyebrow">01 / KIDS JAPANESE</span>
+
+        <h3>
+          ともだちと話そう。<br>
+          日本語でつながろう。
+        </h3>
+
+        <p>
+          日本で暮らす外国につながりのある
+          お子さまを中心に、
+          日本語で話す楽しさを育てる
+          グループレッスンです。
+        </p>
+
+        <p>
+          絵やゲーム、身近なテーマを取り入れ、
+          友だちと一緒に言葉を使いながら
+          学んでいきます。
+        </p>
+
+        <ul class="course-points">
+          <li>3〜6名の少人数グループ</li>
+          <li>あいさつ・自己紹介・日常会話</li>
+          <li>身近な単語と表現を楽しく学習</li>
+          <li>友だちとのコミュニケーションを練習</li>
+        </ul>
+
+        <div class="price-box">
+          <span>キッズ日本語｜月謝（税込）</span>
+          <strong>¥6,600 <small>/ 月</small></strong>
+          <span>1回30分 × 月8回｜グループ</span>
+        </div>
+
+        <a class="btn" href="#trial">
+          キッズ無料体験 →
+        </a>
+      </div>
+
+    </article>
+
+    <!-- ADULT -->
+    <article class="course reverse" id="adults">
+
+      <div class="course-photo">
+        <img
+          src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+          alt="大人の語学学習のイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-japanese.jpg.PNG';">
+      </div>
+
+      <div class="course-copy">
+        <span class="eyebrow">02 / ADULT JAPANESE</span>
+
+        <h3>
+          日本語で話せると、<br>
+          毎日がもっと自由になる。
+        </h3>
+
+        <p>
+          日本での暮らしや仕事、
+          人との交流に役立つ日本語を
+          一人ひとりのペースで学びます。
+        </p>
+
+        <p>
+          マンツーマンだから、
+          苦手なところを確認しながら
+          必要な表現を練習できます。
+        </p>
+
+        <ul class="course-points">
+          <li>初心者から経験者まで対応</li>
+          <li>生活で使う日本語・日常会話</li>
+          <li>職場での基本的なコミュニケーション</li>
+          <li>目的に合わせた個別レッスン</li>
+        </ul>
+
+        <div class="price-box">
+          <span>大人日本語｜月謝（税込）</span>
+          <strong>¥9,900 <small>/ 月</small></strong>
+          <span>1回30分 × 月8回｜マンツーマン</span>
+        </div>
+
+        <a class="btn" href="#trial">
+          大人無料体験 →
+        </a>
+      </div>
+
+    </article>
+
+    <p class="note" style="text-align:center;margin-top:30px">
+      ※掲載写真はレッスンのイメージです。
+    </p>
+
+  </div>
+</section>
+
+<!-- MESSAGE -->
+<div class="message">
+  <span>SMALL WORDS, BIG CONNECTIONS</span>
+
+  <p>
+    「わかった！」の次は、<br>
+    「伝わった！」の喜びへ。
+  </p>
+
+  <span>日本語でひろがる、あたらしい世界。</span>
+</div>
+
+<!-- VALUES -->
+<section class="section" id="learning">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">SMALL STEPS, BIG GROWTH</span>
+      <h2>Learning Together.</h2>
+      <div class="gold-line"></div>
+      <p>学びを続けるために大切にしていること。</p>
+    </div>
+
+    <div class="value-grid">
+
+      <div class="value-card">
+        <div class="value-number">01</div>
+        <h3>話す機会を大切に</h3>
+        <p>
+          聞くだけではなく、
+          自分の言葉で伝える練習を
+          積み重ねます。
+        </p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-number">02</div>
+        <h3>楽しく学び続ける</h3>
+        <p>
+          身近な話題や活動を通して、
+          日本語に親しむ時間をつくります。
+        </p>
+      </div>
+
+      <div class="value-card">
+        <div class="value-number">03</div>
+        <h3>一人ひとりの成長を</h3>
+        <p>
+          年齢や習熟度、目的を大切にしながら、
+          少しずつ自信を育てます。
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- INFORMATION -->
+<section class="section cream" id="schedule">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">LESSON INFORMATION</span>
+      <h2>Lesson Guide</h2>
+      <div class="gold-line"></div>
+      <p>受講に関する基本情報をご案内します。</p>
+    </div>
+
+    <div class="info-grid">
+
+      <div class="info-card">
+        <h3>レッスン概要</h3>
+
+        <div class="info-row">
+          <strong>キッズ</strong>
+          <span>3〜6名のグループレッスン</span>
+        </div>
+
+        <div class="info-row">
+          <strong>大人</strong>
+          <span>マンツーマンレッスン</span>
+        </div>
+
+        <div class="info-row">
+          <strong>授業時間</strong>
+          <span>1回30分</span>
+        </div>
+
+        <div class="info-row">
+          <strong>回数</strong>
+          <span>月8回</span>
+        </div>
+
+        <div class="info-row">
+          <strong>開講時間</strong>
+          <span>
+            月〜土曜日<br>
+            7:00〜22:00
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>受講日時</strong>
+          <span>
+            固定曜日・時間制。
+            開講枠を調整してご案内します。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>お支払い</strong>
+          <span>
+            PayPay・前月末までの前払い
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>無料体験</strong>
+          <span>
+            各コース1回・30分
+            （スクール説明を含む）
+          </span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>欠席・振替について</h3>
+
+        <div class="info-row">
+          <strong>欠席連絡</strong>
+          <span>
+            前日までにご連絡ください。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>キッズ</strong>
+          <span>
+            グループレッスンのため、
+            生徒都合による振替はありません。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>大人</strong>
+          <span>
+            所定の期限内のご連絡で、
+            月2回まで振替をご相談いただけます。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>振替期限</strong>
+          <span>
+            当月中を基本とし、
+            最長で翌月末まで。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>講師都合</strong>
+          <span>
+            講師都合による休講は
+            振替で対応します。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>通信障害</strong>
+          <span>
+            原因や状況に応じて
+            個別に対応します。
+          </span>
+        </div>
+
+        <p class="note">
+          詳細な受講条件は、
+          無料体験時にもご案内します。
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TRIAL -->
+<section class="cta" id="trial">
+
+  <span class="eyebrow">YOUR FIRST STEP</span>
+
+  <h2>
+    日本語で話す楽しさを、<br>
+    ここから。
+  </h2>
+
+  <p>
+    はじめての日本語も、<br>
+    もっと上手になりたい日本語も。<br>
+    まずは無料体験で、
+    Lovinity Academyの学びに触れてみませんか？
+  </p>
+
+  <a
+    class="btn"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
+    target="_blank"
+    rel="noopener noreferrer">
+    無料体験レッスンを申し込む →
+  </a>
+
+  <p class="note">
+    無料体験は各コースお一人様1回まで。<br>
+    レッスンとスクール説明を30分以内に行います。<br>
+    フォーム送信後に日程を調整します。<br>
+    送信時点では予約確定となりません。
+  </p>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+  <span class="footer-brand">
+    Lovinity Academy
+  </span>
+
+  <p class="tagline">
+    Dream, Create, Shine.
+  </p>
+
+  <div class="footer-links">
+    <a href="../index.html">HOME</a>
+    <a href="../index.html#courses">COURSES</a>
+    <a href="../terms.html">受講規約</a>
+    <a href="../privacy.html">プライバシーポリシー</a>
+  </div>
+
+  <p>
+    <a href="mailto:lovinityacademy@gmail.com">
+      lovinityacademy@gmail.com
+    </a>
+  </p>
+
+  <small>© 2026 Lovinity Academy</small>
+
+</footer>
+
+</body>
+</html>
