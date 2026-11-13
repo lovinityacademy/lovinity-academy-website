@@ -1,14 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <meta name="description" content="Lovinity AcademyのArt de English。アートと英語を組み合わせた子ども向け対面レッスン。描く・つくる・話す体験を通して、創造力と表現する楽しさを育てます。">
-
 <title>Art de English | Lovinity Academy</title>
-
 <link rel="icon" href="../lovinity-logo.png">
 <link rel="apple-touch-icon" href="../lovinity-logo.png">
 
@@ -25,31 +21,21 @@
   --blue:#eaf2fa;
   --line:#e8dfcf;
 }
-
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
-
 body {
   margin:0;
   color:var(--ink);
   background:#fff;
-  font-family:"Helvetica Neue","Hiragino Kaku Gothic ProN",
-              "Yu Gothic",Arial,sans-serif;
+  font-family:"Helvetica Neue","Hiragino Kaku Gothic ProN","Yu Gothic",Arial,sans-serif;
   line-height:1.85;
 }
-
 a { color:inherit; }
 img { max-width:100%; }
 section { scroll-margin-top:105px; }
-
-.container {
-  width:min(1120px,90%);
-  margin:auto;
-}
-
+.container { width:min(1120px,90%); margin:auto; }
 .section { padding:95px 0; }
 .cream { background:var(--cream); }
-
 .eyebrow {
   display:block;
   margin-bottom:14px;
@@ -58,30 +44,18 @@ section { scroll-margin-top:105px; }
   font-weight:700;
   letter-spacing:3px;
 }
-
-.section-heading {
-  text-align:center;
-  margin-bottom:48px;
-}
-
+.section-heading { text-align:center; margin-bottom:48px; }
 .section-heading h2 {
-  font:normal clamp(29px,4vw,43px)/1.45
-       Georgia,"Yu Mincho",serif;
+  font:normal clamp(29px,4vw,43px)/1.45 Georgia,"Yu Mincho",serif;
   margin:0 0 12px;
 }
-
-.section-heading p {
-  color:var(--muted);
-  font-size:14px;
-}
-
+.section-heading p { color:var(--muted); font-size:14px; }
 .gold-line {
   width:48px;
   height:2px;
   margin:18px auto;
   background:var(--gold);
 }
-
 .btn {
   display:inline-flex;
   align-items:center;
@@ -97,26 +71,12 @@ section { scroll-margin-top:105px; }
   font-weight:700;
   transition:.2s;
 }
-
-.btn:hover {
-  background:var(--gold-dark);
-  border-color:var(--gold-dark);
-}
-
-.btn-outline {
-  background:transparent;
-  color:var(--gold-dark);
-}
-
+.btn:hover { background:var(--gold-dark); border-color:var(--gold-dark); }
+.btn-outline { background:transparent; color:var(--gold-dark); }
 .btn-outline:hover { color:white; }
-
-.note {
-  font-size:12px;
-  color:#777;
-}
+.note { font-size:12px; color:#777; }
 
 /* HEADER */
-
 header {
   position:sticky;
   top:0;
@@ -131,7 +91,6 @@ header {
   border-bottom:1px solid var(--line);
   backdrop-filter:blur(12px);
 }
-
 .brand {
   display:flex;
   align-items:center;
@@ -141,35 +100,19 @@ header {
   color:var(--gold);
   text-decoration:none;
 }
-
-.brand img {
-  width:38px;
-  height:38px;
-  object-fit:contain;
-}
-
-header nav {
-  display:flex;
-  flex-wrap:wrap;
-  gap:13px;
-}
-
+.brand img { width:38px; height:38px; object-fit:contain; }
+header nav { display:flex; flex-wrap:wrap; gap:13px; }
 header nav a {
   font-size:11px;
   letter-spacing:1px;
   text-decoration:none;
 }
-
 header nav a:hover { color:var(--gold); }
 
 /* HERO */
-
 .hero {
-  background:linear-gradient(
-    125deg,#fff 0%,#fff8ec 50%,#ffece3 100%
-  );
+  background:linear-gradient(125deg,#fff 0%,#fff8ec 50%,#ffece3 100%);
 }
-
 .hero-inner {
   width:min(1220px,92%);
   min-height:620px;
@@ -180,38 +123,24 @@ header nav a:hover { color:var(--gold); }
   gap:55px;
   align-items:center;
 }
-
 .hero h1 {
-  font:normal clamp(35px,5vw,61px)/1.5
-       Georgia,"Yu Mincho",serif;
+  font:normal clamp(35px,5vw,61px)/1.5 Georgia,"Yu Mincho",serif;
   margin:12px 0 20px;
 }
-
-.hero h1 em {
-  font-style:normal;
-  color:var(--gold-dark);
-}
-
-.hero p {
-  font-size:15px;
-  line-height:2.15;
-  color:#555;
-}
-
+.hero h1 em { font-style:normal; color:var(--gold-dark); }
+.hero p { font-size:15px; line-height:2.15; color:#555; }
 .hero-actions {
   display:flex;
   flex-wrap:wrap;
   gap:12px;
   margin-top:28px;
 }
-
 .tags {
   display:flex;
   flex-wrap:wrap;
   gap:9px;
   margin-top:27px;
 }
-
 .tags span {
   padding:5px 13px;
   background:#fff;
@@ -219,9 +148,7 @@ header nav a:hover { color:var(--gold); }
   border-radius:30px;
   font-size:12px;
 }
-
 .hero-visual { position:relative; }
-
 .hero-visual img {
   display:block;
   width:100%;
@@ -230,7 +157,6 @@ header nav a:hover { color:var(--gold); }
   border-radius:170px 170px 8px 8px;
   box-shadow:0 20px 45px #72512e18;
 }
-
 .sticker {
   position:absolute;
   bottom:-15px;
@@ -241,128 +167,71 @@ header nav a:hover { color:var(--gold); }
   border-radius:7px;
   box-shadow:0 10px 30px #00000010;
 }
-
 .sticker strong {
   display:block;
   font:normal 23px Georgia,serif;
   color:var(--gold-dark);
 }
-
-.sticker span {
-  color:#777;
-  font-size:11px;
-}
+.sticker span { color:#777; font-size:11px; }
 
 /* STATS */
-
-.stats {
-  border-bottom:1px solid var(--line);
-}
-
-.stats-inner {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-}
-
-.stat {
-  padding:28px 10px;
-  text-align:center;
-}
-
-.stat + .stat {
-  border-left:1px solid var(--line);
-}
-
+.stats { border-bottom:1px solid var(--line); }
+.stats-inner { display:grid; grid-template-columns:repeat(3,1fr); }
+.stat { padding:28px 10px; text-align:center; }
+.stat + .stat { border-left:1px solid var(--line); }
 .stat strong {
   display:block;
   font:normal clamp(25px,4vw,37px) Georgia,serif;
   color:var(--gold-dark);
 }
-
-.stat span {
-  font-size:12px;
-  color:#666;
-}
+.stat span { font-size:12px; color:#666; }
 
 /* INTRO */
-
-.intro {
-  max-width:790px;
-  margin:auto;
-  text-align:center;
-}
-
+.intro { max-width:790px; margin:auto; text-align:center; }
 .intro h2 {
-  font:normal clamp(26px,4vw,38px)/1.65
-       Georgia,"Yu Mincho",serif;
+  font:normal clamp(26px,4vw,38px)/1.65 Georgia,"Yu Mincho",serif;
   margin:0 0 25px;
 }
-
-.intro p {
-  font-size:15px;
-  line-height:2.3;
-  color:#555;
-}
-
+.intro p { font-size:15px; line-height:2.3; color:#555; }
 .intro strong { color:var(--gold-dark); }
 
 /* EXPERIENCE */
-
 .experience-grid {
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:22px;
 }
-
 .experience {
   background:#fff;
   border:1px solid var(--line);
   border-radius:8px;
   overflow:hidden;
 }
-
 .experience img {
   display:block;
   width:100%;
   height:230px;
   object-fit:cover;
 }
-
-.experience-content {
-  padding:25px;
-}
-
+.experience-content { padding:25px; }
 .experience-content span {
   color:var(--gold-dark);
   font-size:11px;
   letter-spacing:2px;
 }
-
-.experience-content h3 {
-  margin:8px 0 12px;
-  font-size:20px;
-}
-
-.experience-content p {
-  margin:0;
-  color:#666;
-  font-size:13px;
-}
+.experience-content h3 { margin:8px 0 12px; font-size:20px; }
+.experience-content p { margin:0; color:#666; font-size:13px; }
 
 /* MESSAGE */
-
 .message {
   padding:70px 20px;
   text-align:center;
   background:linear-gradient(120deg,#fff2df,#eaf5ed);
 }
-
 .message p {
-  font:normal clamp(23px,4vw,38px)/1.7
-       Georgia,"Yu Mincho",serif;
+  font:normal clamp(23px,4vw,38px)/1.7 Georgia,"Yu Mincho",serif;
   margin:10px 0;
 }
-
 .message span {
   color:#987748;
   font-size:12px;
@@ -370,13 +239,11 @@ header nav a:hover { color:var(--gold); }
 }
 
 /* STEPS */
-
 .steps {
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:20px;
 }
-
 .step {
   padding:32px 25px;
   text-align:center;
@@ -384,31 +251,17 @@ header nav a:hover { color:var(--gold); }
   border-radius:8px;
   background:#fff;
 }
-
-.step-number {
-  color:var(--gold);
-  font:normal 35px Georgia,serif;
-}
-
-.step h3 {
-  font-size:17px;
-  margin:12px 0;
-}
-
-.step p {
-  font-size:13px;
-  color:#666;
-}
+.step-number { color:var(--gold); font:normal 35px Georgia,serif; }
+.step h3 { font-size:17px; margin:12px 0; }
+.step p { font-size:13px; color:#666; }
 
 /* PRICE */
-
 .price-area {
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:50px;
   align-items:center;
 }
-
 .price-photo {
   display:block;
   width:100%;
@@ -416,18 +269,11 @@ header nav a:hover { color:var(--gold); }
   object-fit:cover;
   border-radius:8px;
 }
-
 .price-copy h2 {
-  font:normal clamp(29px,4vw,41px)/1.4
-       Georgia,serif;
+  font:normal clamp(29px,4vw,41px)/1.4 Georgia,serif;
   margin:8px 0 16px;
 }
-
-.price-copy p {
-  font-size:14px;
-  color:#555;
-}
-
+.price-copy p { font-size:14px; color:#555; }
 .price-box {
   margin:25px 0;
   padding:23px;
@@ -435,44 +281,31 @@ header nav a:hover { color:var(--gold); }
   border:1px solid var(--line);
   border-left:4px solid var(--gold);
 }
-
 .price-box strong {
   display:block;
   color:var(--gold-dark);
   font:bold 36px Georgia,serif;
 }
-
-.price-box small {
-  font:normal 12px sans-serif;
-}
-
-.price-box span {
-  display:block;
-  color:#666;
-  font-size:12px;
-}
+.price-box small { font:normal 12px sans-serif; }
+.price-box span { display:block; color:#666; font-size:12px; }
 
 /* INFO */
-
 .info-grid {
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:24px;
 }
-
 .info-card {
   padding:30px;
   background:#fff;
   border:1px solid var(--line);
   border-radius:7px;
 }
-
 .info-card h3 {
   color:var(--gold-dark);
   font-size:19px;
   margin:0 0 18px;
 }
-
 .info-row {
   display:grid;
   grid-template-columns:105px 1fr;
@@ -481,51 +314,38 @@ header nav a:hover { color:var(--gold); }
   border-bottom:1px solid #eee;
   font-size:13px;
 }
-
 .info-row:last-child { border-bottom:0; }
 .info-row span { color:#666; }
 
 /* CTA */
-
 .cta {
   padding:95px 20px;
   text-align:center;
   background:linear-gradient(135deg,#fff4e6,#edf5ee);
 }
-
 .cta h2 {
-  font:normal clamp(29px,4vw,43px)/1.6
-       Georgia,"Yu Mincho",serif;
+  font:normal clamp(29px,4vw,43px)/1.6 Georgia,"Yu Mincho",serif;
   margin:12px 0 18px;
 }
-
-.cta p {
-  font-size:14px;
-  color:#555;
-}
-
+.cta p { font-size:14px; color:#555; }
 .cta .btn { margin:20px 0 14px; }
 
 /* FOOTER */
-
 footer {
   padding:55px 20px;
   text-align:center;
   background:#252525;
   color:#fff;
 }
-
 .footer-brand {
   font:bold 24px Georgia,serif;
   color:var(--gold);
 }
-
 .tagline {
   font:normal 14px Georgia,serif;
   letter-spacing:2px;
   color:#ddd;
 }
-
 .footer-links {
   display:flex;
   justify-content:center;
@@ -533,58 +353,31 @@ footer {
   gap:18px;
   margin:25px 0;
 }
-
-footer a {
-  color:#ddd;
-  text-decoration:none;
-  font-size:12px;
-}
-
+footer a { color:#ddd; text-decoration:none; font-size:12px; }
 footer a:hover { color:var(--gold); }
 footer small { color:#aaa; }
 
 /* MOBILE */
-
 @media(max-width:750px) {
   header { justify-content:center; }
-
-  header nav {
-    justify-content:center;
-    gap:11px;
-  }
-
+  header nav { justify-content:center; gap:11px; }
   .hero-inner {
     grid-template-columns:1fr;
     gap:36px;
     padding:55px 0 65px;
   }
-
   .hero-copy { text-align:center; }
-
-  .hero-actions,
-  .tags { justify-content:center; }
-
-  .hero-visual {
-    width:90%;
-    margin:auto;
-  }
-
+  .hero-actions,.tags { justify-content:center; }
+  .hero-visual { width:90%; margin:auto; }
   .hero-visual img {
     height:350px;
     border-radius:140px 140px 8px 8px;
   }
-
   .sticker { left:-10px; }
-
   .section { padding:65px 0; }
-
-  .experience-grid,
-  .steps,
-  .price-area,
-  .info-grid {
+  .experience-grid,.steps,.price-area,.info-grid {
     grid-template-columns:1fr;
   }
-
   .experience img { height:240px; }
   .price-photo { height:300px; }
   .price-area { gap:25px; }
@@ -592,10 +385,56 @@ footer small { color:#aaa; }
   .stat { padding:20px 5px; }
   .stat span { font-size:10px; }
 }
-
 @media(prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto; }
   .btn { transition:none; }
+}
+
+/* SMARTPHONE FIXED TRIAL BUTTON */
+.mobile-trial-bar { display:none; }
+
+@media screen and (max-width:767px) {
+  .mobile-trial-bar {
+    display:block;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:9999;
+    padding:11px 16px calc(9px + env(safe-area-inset-bottom));
+    background:rgba(255,255,255,.97);
+    border-top:1px solid #e7ddca;
+    box-shadow:0 -5px 20px rgba(0,0,0,.06);
+  }
+  .mobile-trial-button {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    min-height:49px;
+    padding:11px 15px;
+    background:#b9954b;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+    border-radius:5px;
+    text-align:center;
+  }
+  .mobile-trial-button:hover,
+  .mobile-trial-button:focus-visible {
+    background:#947439;
+  }
+  .mobile-trial-bar p {
+    margin:5px 0 0;
+    text-align:center;
+    font-size:10px;
+    line-height:1.4;
+    color:#777;
+  }
+  body {
+    padding-bottom:calc(100px + env(safe-area-inset-bottom));
+  }
 }
 </style>
 </head>
@@ -608,7 +447,6 @@ footer small { color:#aaa; }
     <img src="../lovinity-logo.png" alt="Lovinity Academy ロゴ">
     <span>Lovinity Academy</span>
   </a>
-
   <nav>
     <a href="../index.html#about">ABOUT</a>
     <a href="../index.html#courses">COURSES</a>
@@ -624,15 +462,12 @@ footer small { color:#aaa; }
 <!-- HERO -->
 <div class="hero">
   <div class="hero-inner">
-
     <div class="hero-copy">
       <span class="eyebrow">LOVINITY ART DE ENGLISH</span>
-
       <h1>
         つくる楽しさ。<br>
         <em>伝えるよろこび。</em>
       </h1>
-
       <p>
         絵を描く。色を選ぶ。形をつくる。<br>
         夢中になっているうちに、<br>
@@ -640,98 +475,76 @@ footer small { color:#aaa; }
         アートと英語を組み合わせた、<br>
         子どもたちの創造力を育むレッスン。
       </p>
-
       <div class="hero-actions">
-        <a class="btn" href="#trial">
-          無料体験レッスン →
-        </a>
-
-        <a class="btn btn-outline" href="#experience">
-          レッスン内容を見る
-        </a>
+        <a class="btn" href="#trial">無料体験レッスン →</a>
+        <a class="btn btn-outline" href="#experience">レッスン内容を見る</a>
       </div>
-
       <div class="tags">
         <span>アート × 英語</span>
         <span>対面レッスン</span>
         <span>初心者歓迎</span>
       </div>
     </div>
-
     <div class="hero-visual">
-      <img
-        src="../course-art.jpg.PNG"
-        alt="Art de Englishのレッスンイメージ"
-        fetchpriority="high">
-
+      <img src="../course-art.jpg.PNG"
+           alt="Art de Englishのレッスンイメージ"
+           fetchpriority="high">
       <div class="sticker">
         <strong>Create &amp; Express.</strong>
         <span>想像する力を、表現する力へ。</span>
       </div>
     </div>
-
   </div>
 </div>
 
 <!-- STATS -->
 <div class="stats">
   <div class="container stats-inner">
-
     <div class="stat">
       <strong>60 min</strong>
       <span>1回60分</span>
     </div>
-
     <div class="stat">
       <strong>4 lessons</strong>
       <span>月4回</span>
     </div>
-
     <div class="stat">
       <strong>Art + English</strong>
       <span>アートと英語の融合</span>
     </div>
-
   </div>
 </div>
 
 <!-- INTRO -->
 <section class="section">
   <div class="container intro">
-
     <span class="eyebrow">OUR PHILOSOPHY</span>
-
     <h2>
       正解は、ひとつじゃない。<br>
       だから、表現はおもしろい。
     </h2>
-
     <p>
       Lovinity AcademyのArt de Englishは、<br>
       <strong>アートと英語を通して、
       自分らしく表現する力を育む</strong>
       クラスです。
     </p>
-
     <p>
       上手に描くことや、
       英語を完璧に話すことだけが
       目的ではありません。
     </p>
-
     <p>
       自分で考え、つくり、伝える。<br>
       その一つひとつの体験を
       大切にしています。
     </p>
-
   </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section class="section cream" id="experience">
   <div class="container">
-
     <div class="section-heading">
       <span class="eyebrow">DISCOVER THE EXPERIENCE</span>
       <h2>Explore. Create. Speak.</h2>
@@ -740,14 +553,12 @@ footer small { color:#aaa; }
     </div>
 
     <div class="experience-grid">
-
       <article class="experience">
         <img
           src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
           alt="絵の具や画材のイメージ"
           loading="lazy"
           onerror="this.onerror=null;this.src='../course-art.jpg.PNG';">
-
         <div class="experience-content">
           <span>01 / COLORS &amp; SHAPES</span>
           <h3>色と形であそぶ</h3>
@@ -765,7 +576,6 @@ footer small { color:#aaa; }
           alt="カラフルなアート作品のイメージ"
           loading="lazy"
           onerror="this.onerror=null;this.src='../course-art.jpg.PNG';">
-
         <div class="experience-content">
           <span>02 / CREATIVE WORK</span>
           <h3>自由につくる</h3>
@@ -783,7 +593,6 @@ footer small { color:#aaa; }
           alt="子どもたちが学ぶイメージ"
           loading="lazy"
           onerror="this.onerror=null;this.src='../course-art.jpg.PNG';">
-
         <div class="experience-content">
           <span>03 / SHOW &amp; TELL</span>
           <h3>自分の作品を伝える</h3>
@@ -795,42 +604,35 @@ footer small { color:#aaa; }
           </p>
         </div>
       </article>
-
     </div>
 
     <p class="note" style="text-align:center;margin-top:22px">
       ※写真は活動のイメージです。
       制作内容はレッスンごとに異なります。
     </p>
-
   </div>
 </section>
 
 <!-- MESSAGE -->
 <div class="message">
   <span>EVERY CHILD IS AN ARTIST</span>
-
   <p>
     「できた！」の笑顔から、<br>
     未来の可能性がひろがる。
   </p>
-
   <span>Dream, Create, Shine.</span>
 </div>
 
 <!-- STEPS -->
 <section class="section">
   <div class="container">
-
     <div class="section-heading">
       <span class="eyebrow">OUR LEARNING STYLE</span>
       <h2>Small Steps, Big Creativity.</h2>
       <div class="gold-line"></div>
       <p>子どもたちの「やってみたい」を大切に。</p>
     </div>
-
     <div class="steps">
-
       <div class="step">
         <div class="step-number">01</div>
         <h3>見つける・感じる</h3>
@@ -839,7 +641,6 @@ footer small { color:#aaa; }
           興味や発見を楽しみます。
         </p>
       </div>
-
       <div class="step">
         <div class="step-number">02</div>
         <h3>考える・つくる</h3>
@@ -848,7 +649,6 @@ footer small { color:#aaa; }
           作品づくりに挑戦します。
         </p>
       </div>
-
       <div class="step">
         <div class="step-number">03</div>
         <h3>見せる・伝える</h3>
@@ -858,54 +658,34 @@ footer small { color:#aaa; }
           少しずつ育てます。
         </p>
       </div>
-
     </div>
-
   </div>
 </section>
 
 <!-- PRICE -->
 <section class="section" style="background:var(--yellow)" id="price">
   <div class="container price-area">
-
-    <img
-      class="price-photo"
-      src="../course-art.jpg.PNG"
-      alt="Art de Englishのイメージ"
-      loading="lazy">
-
+    <img class="price-photo"
+         src="../course-art.jpg.PNG"
+         alt="Art de Englishのイメージ"
+         loading="lazy">
     <div class="price-copy">
-
       <span class="eyebrow">LESSON &amp; PRICE</span>
-
       <h2>
         Make Something<br>
         Wonderful.
       </h2>
-
       <p>
         アートに夢中になる時間を、
         英語に親しむきっかけに。
       </p>
-
       <div class="price-box">
         <span>Art de English｜月謝（税込）</span>
-
         <strong>¥9,900 <small>/ 月</small></strong>
-
-        <span>
-          1回60分 × 月4回｜対面レッスン
-        </span>
+        <span>1回60分 × 月4回｜対面レッスン</span>
       </div>
-
-      <p>
-        入会金：10,000円（税込）
-      </p>
-
-      <a class="btn" href="#trial">
-        無料体験を申し込む →
-      </a>
-
+      <p>入会金：10,000円（税込）</p>
+      <a class="btn" href="#trial">無料体験を申し込む →</a>
     </div>
   </div>
 </section>
@@ -913,7 +693,6 @@ footer small { color:#aaa; }
 <!-- LESSON INFORMATION -->
 <section class="section cream" id="schedule">
   <div class="container">
-
     <div class="section-heading">
       <span class="eyebrow">LESSON INFORMATION</span>
       <h2>Lesson Guide</h2>
@@ -922,7 +701,6 @@ footer small { color:#aaa; }
     </div>
 
     <div class="info-grid">
-
       <div class="info-card">
         <h3>レッスン概要</h3>
 
@@ -960,11 +738,9 @@ footer small { color:#aaa; }
         <div class="info-row">
           <strong>開催場所</strong>
           <span>
-           
-原則として同じレンタルスタジオにて開催しております。（埼玉県・東京都内）<br>
-会場の変更や通常とは異なる会場で実施する場合は、<br>
-事前にご案内いたします。
-
+            原則として同じレンタルスタジオにて開催しております。（埼玉県・東京都内）<br>
+            会場の変更や通常とは異なる会場で実施する場合は、<br>
+            事前にご案内いたします。
           </span>
         </div>
 
@@ -1001,9 +777,7 @@ footer small { color:#aaa; }
 
         <div class="info-row">
           <strong>欠席連絡</strong>
-          <span>
-            前日までにご連絡ください。
-          </span>
+          <span>前日までにご連絡ください。</span>
         </div>
 
         <div class="info-row">
@@ -1024,9 +798,7 @@ footer small { color:#aaa; }
 
         <div class="info-row">
           <strong>持ち物</strong>
-          <span>
-            内容に応じて事前にご案内します。
-          </span>
+          <span>内容に応じて事前にご案内します。</span>
         </div>
 
         <p class="note">
@@ -1034,21 +806,17 @@ footer small { color:#aaa; }
           お申し込み時にご確認ください。
         </p>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- TRIAL -->
 <section class="cta" id="trial">
-
   <span class="eyebrow">YOUR FIRST CREATIVE STEP</span>
-
   <h2>
     はじめての作品から、<br>
     大きな可能性へ。
   </h2>
-
   <p>
     絵を描くのが好きな子も、<br>
     英語がはじめての子も。<br>
@@ -1056,11 +824,10 @@ footer small { color:#aaa; }
     触れてみませんか？
   </p>
 
-  <a
-    class="btn"
-    href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
-    target="_blank"
-    rel="noopener noreferrer">
+  <a class="btn"
+     href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
+     target="_blank"
+     rel="noopener noreferrer">
     無料体験レッスンを申し込む →
   </a>
 
@@ -1070,21 +837,14 @@ footer small { color:#aaa; }
     フォーム送信後に日程・会場をご案内します。<br>
     送信時点では予約確定となりません。
   </p>
-
 </section>
 
 </main>
 
 <!-- FOOTER -->
 <footer>
-
-  <span class="footer-brand">
-    Lovinity Academy
-  </span>
-
-  <p class="tagline">
-    Dream, Create, Shine.
-  </p>
+  <span class="footer-brand">Lovinity Academy</span>
+  <p class="tagline">Dream, Create, Shine.</p>
 
   <div class="footer-links">
     <a href="../index.html">HOME</a>
@@ -1100,8 +860,21 @@ footer small { color:#aaa; }
   </p>
 
   <small>© 2026 Lovinity Academy</small>
-
 </footer>
+
+<!-- スマートフォン用・無料体験固定ボタン -->
+<div class="mobile-trial-bar">
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="mobile-trial-button"
+  >
+    無料体験レッスンを申し込む
+    <span aria-hidden="true">→</span>
+  </a>
+  <p>お一人様1回まで・予約リクエスト制</p>
+</div>
 
 </body>
 </html>
