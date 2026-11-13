@@ -1,0 +1,1111 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Lovinity Academyの芸能コース。ボーカル・ダンス・演技・語学を学び、表現力と可能性を広げる対面レッスン。">
+
+<title>芸能コース | Lovinity Academy</title>
+
+<link rel="icon" href="../lovinity-logo.png">
+<link rel="apple-touch-icon" href="../lovinity-logo.png">
+
+<style>
+:root {
+  --gold:#b9954b;
+  --gold-dark:#8c6c32;
+  --ink:#252525;
+  --muted:#666;
+  --cream:#faf8f3;
+  --black:#1d1d1d;
+  --champagne:#f5efe2;
+  --line:#e8dfcf;
+}
+
+* { box-sizing:border-box; }
+
+html { scroll-behavior:smooth; }
+
+body {
+  margin:0;
+  color:var(--ink);
+  background:#fff;
+  font-family:"Helvetica Neue","Hiragino Kaku Gothic ProN",
+              "Yu Gothic",Arial,sans-serif;
+  line-height:1.85;
+}
+
+a { color:inherit; }
+img { max-width:100%; }
+section { scroll-margin-top:105px; }
+
+.container {
+  width:min(1120px,90%);
+  margin:auto;
+}
+
+.section { padding:95px 0; }
+.cream { background:var(--cream); }
+
+.eyebrow {
+  display:block;
+  color:var(--gold-dark);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:3px;
+  margin-bottom:14px;
+}
+
+.section-heading {
+  text-align:center;
+  margin-bottom:48px;
+}
+
+.section-heading h2 {
+  font:normal clamp(29px,4vw,43px)/1.45
+       Georgia,"Yu Mincho",serif;
+  margin:0 0 12px;
+}
+
+.section-heading p {
+  color:var(--muted);
+  font-size:14px;
+}
+
+.gold-line {
+  width:48px;
+  height:2px;
+  margin:18px auto;
+  background:var(--gold);
+}
+
+.btn {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:50px;
+  padding:12px 27px;
+  background:var(--gold);
+  color:#fff;
+  border:1px solid var(--gold);
+  border-radius:4px;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+  transition:.2s;
+}
+
+.btn:hover {
+  background:var(--gold-dark);
+  border-color:var(--gold-dark);
+}
+
+.btn-outline {
+  background:transparent;
+  color:var(--gold-dark);
+}
+
+.btn-outline:hover { color:#fff; }
+
+.note {
+  color:#777;
+  font-size:12px;
+}
+
+/* HEADER */
+
+header {
+  position:sticky;
+  top:0;
+  z-index:100;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:15px;
+  padding:12px 5%;
+  background:rgba(255,255,255,.97);
+  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(12px);
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--gold);
+  text-decoration:none;
+  font:bold 19px Georgia,serif;
+  letter-spacing:1px;
+}
+
+.brand img {
+  width:38px;
+  height:38px;
+  object-fit:contain;
+}
+
+header nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:13px;
+}
+
+header nav a {
+  font-size:11px;
+  letter-spacing:1px;
+  text-decoration:none;
+}
+
+header nav a:hover { color:var(--gold); }
+
+/* HERO */
+
+.hero {
+  background:linear-gradient(
+    125deg,#fff 0%,#faf8f3 45%,#ece7df 100%
+  );
+}
+
+.hero-inner {
+  width:min(1220px,92%);
+  min-height:630px;
+  margin:auto;
+  padding:65px 0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.hero h1 {
+  font:normal clamp(35px,5vw,62px)/1.48
+       Georgia,"Yu Mincho",serif;
+  margin:12px 0 20px;
+}
+
+.hero h1 em {
+  font-style:normal;
+  color:var(--gold-dark);
+}
+
+.hero p {
+  font-size:15px;
+  color:#555;
+  line-height:2.15;
+}
+
+.hero-actions {
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+
+.tags {
+  display:flex;
+  gap:9px;
+  flex-wrap:wrap;
+  margin-top:27px;
+}
+
+.tags span {
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:30px;
+  padding:5px 13px;
+  font-size:12px;
+}
+
+.hero-visual { position:relative; }
+
+.hero-visual img {
+  display:block;
+  width:100%;
+  height:500px;
+  object-fit:cover;
+  border-radius:170px 170px 8px 8px;
+  box-shadow:0 20px 45px #00000020;
+}
+
+.sticker {
+  position:absolute;
+  bottom:-15px;
+  left:-20px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:7px;
+  box-shadow:0 10px 30px #00000010;
+  padding:17px 24px;
+}
+
+.sticker strong {
+  display:block;
+  color:var(--gold-dark);
+  font:normal 23px Georgia,serif;
+}
+
+.sticker span {
+  color:#777;
+  font-size:11px;
+}
+
+/* STATS */
+
+.stats { border-bottom:1px solid var(--line); }
+
+.stats-inner {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+}
+
+.stat {
+  text-align:center;
+  padding:28px 10px;
+}
+
+.stat + .stat {
+  border-left:1px solid var(--line);
+}
+
+.stat strong {
+  display:block;
+  color:var(--gold-dark);
+  font:normal clamp(25px,4vw,37px) Georgia,serif;
+}
+
+.stat span {
+  color:#666;
+  font-size:12px;
+}
+
+/* INTRO */
+
+.intro {
+  max-width:800px;
+  margin:auto;
+  text-align:center;
+}
+
+.intro h2 {
+  font:normal clamp(26px,4vw,38px)/1.65
+       Georgia,"Yu Mincho",serif;
+  margin:0 0 25px;
+}
+
+.intro p {
+  color:#555;
+  font-size:15px;
+  line-height:2.3;
+}
+
+.intro strong { color:var(--gold-dark); }
+
+/* SUBJECTS */
+
+.subject-grid {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+}
+
+.subject {
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  overflow:hidden;
+}
+
+.subject img {
+  display:block;
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+.subject-content { padding:26px 28px 30px; }
+
+.subject-content span {
+  color:var(--gold-dark);
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.subject-content h3 {
+  font-size:22px;
+  margin:8px 0 12px;
+}
+
+.subject-content p {
+  color:#666;
+  font-size:13px;
+  margin:0;
+}
+
+/* MESSAGE */
+
+.message {
+  padding:75px 20px;
+  background:var(--black);
+  color:#fff;
+  text-align:center;
+}
+
+.message p {
+  font:normal clamp(25px,4vw,40px)/1.7
+       Georgia,"Yu Mincho",serif;
+  margin:10px 0;
+}
+
+.message span {
+  color:#d9c294;
+  font-size:12px;
+  letter-spacing:2px;
+}
+
+/* STEPS */
+
+.steps {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.step {
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:8px;
+  text-align:center;
+  padding:32px 25px;
+}
+
+.step-number {
+  color:var(--gold);
+  font:normal 35px Georgia,serif;
+}
+
+.step h3 {
+  font-size:17px;
+  margin:12px 0;
+}
+
+.step p {
+  color:#666;
+  font-size:13px;
+}
+
+/* PRICE */
+
+.price-area {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:center;
+}
+
+.price-photo {
+  display:block;
+  width:100%;
+  height:420px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+.price-copy h2 {
+  font:normal clamp(29px,4vw,41px)/1.4
+       Georgia,serif;
+  margin:8px 0 16px;
+}
+
+.price-copy p {
+  color:#555;
+  font-size:14px;
+}
+
+.price-box {
+  margin:25px 0;
+  padding:23px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-left:4px solid var(--gold);
+}
+
+.price-box strong {
+  display:block;
+  color:var(--gold-dark);
+  font:bold 36px Georgia,serif;
+}
+
+.price-box small { font:normal 12px sans-serif; }
+
+.price-box span {
+  display:block;
+  color:#666;
+  font-size:12px;
+}
+
+/* INFO */
+
+.info-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+
+.info-card {
+  padding:30px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:7px;
+}
+
+.info-card h3 {
+  color:var(--gold-dark);
+  font-size:19px;
+  margin:0 0 18px;
+}
+
+.info-row {
+  display:grid;
+  grid-template-columns:105px 1fr;
+  gap:14px;
+  padding:12px 0;
+  border-bottom:1px solid #eee;
+  font-size:13px;
+}
+
+.info-row:last-child { border-bottom:0; }
+.info-row span { color:#666; }
+
+/* CTA */
+
+.cta {
+  padding:95px 20px;
+  background:linear-gradient(135deg,#f5efe2,#ece7df);
+  text-align:center;
+}
+
+.cta h2 {
+  font:normal clamp(29px,4vw,43px)/1.6
+       Georgia,"Yu Mincho",serif;
+  margin:12px 0 18px;
+}
+
+.cta p {
+  color:#555;
+  font-size:14px;
+}
+
+.cta .btn { margin:20px 0 14px; }
+
+/* FOOTER */
+
+footer {
+  padding:55px 20px;
+  text-align:center;
+  background:#252525;
+  color:#fff;
+}
+
+.footer-brand {
+  color:var(--gold);
+  font:bold 24px Georgia,serif;
+}
+
+.tagline {
+  color:#ddd;
+  font:normal 14px Georgia,serif;
+  letter-spacing:2px;
+}
+
+.footer-links {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:18px;
+  margin:25px 0;
+}
+
+footer a {
+  color:#ddd;
+  text-decoration:none;
+  font-size:12px;
+}
+
+footer a:hover { color:var(--gold); }
+footer small { color:#aaa; }
+
+/* MOBILE */
+
+@media(max-width:750px) {
+  header { justify-content:center; }
+
+  header nav {
+    justify-content:center;
+    gap:11px;
+  }
+
+  .hero-inner {
+    grid-template-columns:1fr;
+    gap:36px;
+    padding:55px 0 65px;
+  }
+
+  .hero-copy { text-align:center; }
+
+  .hero-actions,
+  .tags { justify-content:center; }
+
+  .hero-visual {
+    width:90%;
+    margin:auto;
+  }
+
+  .hero-visual img {
+    height:350px;
+    border-radius:140px 140px 8px 8px;
+  }
+
+  .sticker { left:-10px; }
+  .section { padding:65px 0; }
+
+  .subject-grid,
+  .steps,
+  .price-area,
+  .info-grid {
+    grid-template-columns:1fr;
+  }
+
+  .subject img { height:240px; }
+  .price-photo { height:300px; }
+  .price-area { gap:25px; }
+  .info-card { padding:24px 20px; }
+  .stat { padding:20px 5px; }
+  .stat span { font-size:10px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  .btn { transition:none; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <a class="brand" href="../index.html">
+    <img src="../lovinity-logo.png" alt="Lovinity Academy ロゴ">
+    <span>Lovinity Academy</span>
+  </a>
+
+  <nav>
+    <a href="../index.html#about">ABOUT</a>
+    <a href="../index.html#courses">COURSES</a>
+    <a href="../index.html#why">WHY LOVINITY?</a>
+    <a href="../index.html#prices">PRICE</a>
+    <a href="../index.html#schedule">SCHEDULE</a>
+    <a href="../index.html#trial">TRIAL</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+
+    <div class="hero-copy">
+      <span class="eyebrow">LOVINITY ENTERTAINMENT COURSE</span>
+
+      <h1>
+        夢を、<br>
+        <em>表現する力に。</em>
+      </h1>
+
+      <p>
+        歌う。踊る。演じる。伝える。<br>
+        その一つひとつが、自分の可能性を広げる。<br><br>
+        ステージで輝くために。<br>
+        そして、どんな場所でも<br>
+        自分らしく輝ける人になるために。
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#trial">
+          無料体験レッスン →
+        </a>
+
+        <a class="btn btn-outline" href="#subjects">
+          学べる内容を見る
+        </a>
+      </div>
+
+      <div class="tags">
+        <span>ボーカル</span>
+        <span>ダンス</span>
+        <span>演技</span>
+        <span>語学</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img
+        src="../course-entertainment.jpg.PNG"
+        alt="芸能コースのイメージ"
+        fetchpriority="high">
+
+      <div class="sticker">
+        <strong>Born to Shine.</strong>
+        <span>可能性を、ステージの先へ。</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="container stats-inner">
+
+    <div class="stat">
+      <strong>120 min</strong>
+      <span>1回120分</span>
+    </div>
+
+    <div class="stat">
+      <strong>20 lessons</strong>
+      <span>月20回</span>
+    </div>
+
+    <div class="stat">
+      <strong>4 skills</strong>
+      <span>歌・ダンス・演技・語学</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="section">
+  <div class="container intro">
+
+    <span class="eyebrow">OUR PHILOSOPHY</span>
+
+    <h2>
+      才能を磨く。<br>
+      人として、輝く。
+    </h2>
+
+    <p>
+      Lovinity Academyの芸能コースは、<br>
+      <strong>ボーカル・ダンス・演技・語学を通して、
+      表現力を育む</strong>コースです。
+    </p>
+
+    <p>
+      技術を学ぶことだけでなく、<br>
+      挑戦する勇気、仲間への思いやり、<br>
+      努力を続ける力も大切にしています。
+    </p>
+
+    <p>
+      夢を追いかける経験を、<br>
+      未来のあらゆる可能性へ。
+    </p>
+
+  </div>
+</section>
+
+<!-- SUBJECTS -->
+<section class="section cream" id="subjects">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">DISCOVER YOUR POTENTIAL</span>
+      <h2>Four Ways to Express.</h2>
+      <div class="gold-line"></div>
+      <p>4つの分野から、表現の可能性を広げます。</p>
+    </div>
+
+    <div class="subject-grid">
+
+      <article class="subject">
+        <img
+          src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+          alt="歌うことのイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-entertainment.jpg.PNG';">
+
+        <div class="subject-content">
+          <span>01 / VOCAL</span>
+          <h3>ボーカル</h3>
+          <p>
+            声を出す楽しさから、
+            歌を通した感情表現まで。
+            自分らしい声と表現力を磨きます。
+          </p>
+        </div>
+      </article>
+
+      <article class="subject">
+        <img
+          src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+          alt="ダンスのイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-entertainment.jpg.PNG';">
+
+        <div class="subject-content">
+          <span>02 / DANCE</span>
+          <h3>ダンス</h3>
+          <p>
+            リズム感や身体の使い方を学び、
+            音楽に合わせて
+            自分を表現する力を育てます。
+          </p>
+        </div>
+      </article>
+
+      <article class="subject">
+        <img
+          src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+          alt="演技・舞台のイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-entertainment.jpg.PNG';">
+
+        <div class="subject-content">
+          <span>03 / ACTING</span>
+          <h3>演技</h3>
+          <p>
+            台詞、表情、動きを通して
+            役や物語を表現。
+            想像力と伝える力を育みます。
+          </p>
+        </div>
+      </article>
+
+      <article class="subject">
+        <img
+          src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+          alt="語学学習のイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-entertainment.jpg.PNG';">
+
+        <div class="subject-content">
+          <span>04 / LANGUAGE</span>
+          <h3>語学</h3>
+          <p>
+            言葉を通して、
+            より多くの人とつながる力を。
+            表現活動に役立つ語学力を育てます。
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="note" style="text-align:center;margin-top:22px">
+      ※写真はイメージです。
+      レッスン内容はクラスや学習段階に応じて調整します。
+    </p>
+
+  </div>
+</section>
+
+<!-- MESSAGE -->
+<div class="message">
+  <span>BEYOND THE SPOTLIGHT</span>
+
+  <p>
+    目指すのは、<br>
+    ステージだけで終わらない輝き。
+  </p>
+
+  <span>Dream, Create, Shine.</span>
+</div>
+
+<!-- STEPS -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">OUR LEARNING STYLE</span>
+      <h2>Grow Beyond Limits.</h2>
+      <div class="gold-line"></div>
+      <p>挑戦を重ねながら、自分の可能性を広げます。</p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <h3>基礎を身につける</h3>
+        <p>
+          声・身体・表現の基本に触れ、
+          自分の得意や課題を見つけます。
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <h3>表現を磨く</h3>
+        <p>
+          練習と挑戦を積み重ね、
+          自分らしいパフォーマンスを
+          目指します。
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <h3>自信につなげる</h3>
+        <p>
+          仲間と学び、
+          経験を重ねながら
+          新しい目標に挑戦します。
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="section" style="background:var(--champagne)" id="price">
+  <div class="container price-area">
+
+    <img
+      class="price-photo"
+      src="../course-entertainment.jpg.PNG"
+      alt="芸能コースのイメージ"
+      loading="lazy">
+
+    <div class="price-copy">
+      <span class="eyebrow">LESSON &amp; PRICE</span>
+
+      <h2>
+        Your Dream.<br>
+        Your Stage.
+      </h2>
+
+      <p>
+        4つの分野を通して、
+        表現する力と可能性を育てます。
+      </p>
+
+      <div class="price-box">
+        <span>芸能コース｜月謝（税込）</span>
+
+        <strong>¥33,000 <small>/ 月</small></strong>
+
+        <span>
+          1回120分 × 月20回｜対面レッスン
+        </span>
+      </div>
+
+      <p>入会金：20,000円（税込）</p>
+
+      <a class="btn" href="#trial">
+        無料体験を申し込む →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- INFORMATION -->
+<section class="section cream" id="schedule">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">LESSON INFORMATION</span>
+      <h2>Lesson Guide</h2>
+      <div class="gold-line"></div>
+      <p>レッスンの基本情報をご案内します。</p>
+    </div>
+
+    <div class="info-grid">
+
+      <div class="info-card">
+        <h3>レッスン概要</h3>
+
+        <div class="info-row">
+          <strong>内容</strong>
+          <span>
+            ボーカル・ダンス・演技・語学
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>形式</strong>
+          <span>対面レッスン</span>
+        </div>
+
+        <div class="info-row">
+          <strong>時間</strong>
+          <span>1回120分</span>
+        </div>
+
+        <div class="info-row">
+          <strong>回数</strong>
+          <span>月20回</span>
+        </div>
+
+        <div class="info-row">
+          <strong>開講日時</strong>
+          <span>
+            月〜金曜日<br>
+            20:00〜22:00
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>開催場所</strong>
+          <span>
+            埼玉県・東京都内の
+            レンタルスタジオ等を予定。<br>
+            詳細は決定後にご案内
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>月謝</strong>
+          <span>33,000円（税込）</span>
+        </div>
+
+        <div class="info-row">
+          <strong>入会金</strong>
+          <span>20,000円（税込）</span>
+        </div>
+
+        <div class="info-row">
+          <strong>お支払い</strong>
+          <span>
+            PayPayまたは現金。<br>
+            前月末までの前払い
+          </span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>受講・体験について</h3>
+
+        <div class="info-row">
+          <strong>無料体験</strong>
+          <span>
+            お一人様1回まで。<br>
+            通常レッスンと同じ120分枠で
+            スクール説明を含めて実施
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>欠席連絡</strong>
+          <span>前日までにご連絡ください。</span>
+        </div>
+
+        <div class="info-row">
+          <strong>振替</strong>
+          <span>
+            グループ形式で実施する場合、
+            生徒都合による振替はありません。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>講師都合</strong>
+          <span>
+            講師都合による休講は
+            振替で対応します。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>持ち物</strong>
+          <span>
+            レッスン内容に応じて
+            事前にご案内します。
+          </span>
+        </div>
+
+        <p class="note">
+          会場・対象年齢・クラス編成などの詳細は、
+          お申し込み時にご確認ください。
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- TRIAL -->
+<section class="cta" id="trial">
+
+  <span class="eyebrow">YOUR NEXT CHAPTER</span>
+
+  <h2>
+    その夢に、<br>
+    本気で向き合う一歩を。
+  </h2>
+
+  <p>
+    歌うことが好き。<br>
+    ダンスや演技に挑戦したい。<br>
+    もっと自分を表現できるようになりたい。<br><br>
+    その想いを、ここから育てていきませんか？
+  </p>
+
+  <a
+    class="btn"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
+    target="_blank"
+    rel="noopener noreferrer">
+    無料体験レッスンを申し込む →
+  </a>
+
+  <p class="note">
+    無料体験はお一人様1回まで。<br>
+    レッスンとスクール説明を含む120分枠です。<br>
+    フォーム送信後に日程・会場をご案内します。<br>
+    送信時点では予約確定となりません。
+  </p>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+  <span class="footer-brand">
+    Lovinity Academy
+  </span>
+
+  <p class="tagline">
+    Dream, Create, Shine.
+  </p>
+
+  <div class="footer-links">
+    <a href="../index.html">HOME</a>
+    <a href="../index.html#courses">COURSES</a>
+    <a href="../terms.html">受講規約</a>
+    <a href="../privacy.html">プライバシーポリシー</a>
+  </div>
+
+  <p>
+    <a href="mailto:lovinityacademy@gmail.com">
+      lovinityacademy@gmail.com
+    </a>
+  </p>
+
+  <small>© 2026 Lovinity Academy</small>
+
+</footer>
+
+</body>
+</html>
