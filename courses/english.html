@@ -4,67 +4,96 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <meta name="description" content="Lovinity Academyのオンライン英語。中学生の高校入試対策から大人の実践英会話まで。30分×月8回のマンツーマンレッスン。">
+
 <title>オンライン英語 | Lovinity Academy</title>
+
 <link rel="icon" href="../lovinity-logo.png">
 <link rel="stylesheet" href="../style.css">
+
 <style>
+/* ヘッダーのロゴ画像を非表示 */
+header .brand img {
+  display: none !important;
+}
+
+/* ページ上部 */
 .course-hero {
-  background:linear-gradient(145deg,#fff,#f7f2e7);
-  text-align:center;
-  padding:85px 20px 65px;
+  background: linear-gradient(145deg, #fff, #f7f2e7);
+  text-align: center;
+  padding: 85px 20px 65px;
 }
+
 .course-hero h1 {
-  font-family:Georgia,serif;
-  font-size:clamp(30px,5vw,46px);
-  font-weight:normal;
-  margin:12px 0;
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 5vw, 46px);
+  font-weight: normal;
+  margin: 12px 0;
 }
+
 .course-hero .subtitle {
-  color:#947439;
-  letter-spacing:2px;
+  color: #947439;
+  letter-spacing: 2px;
 }
+
 .content-narrow {
-  max-width:850px;
-  margin:auto;
+  max-width: 850px;
+  margin: auto;
 }
-.course-label {
-  color:#947439;
-  font-weight:bold;
-  letter-spacing:1px;
-}
+
 .point-list {
-  padding-left:24px;
+  padding-left: 24px;
 }
+
 .point-list li {
-  margin:10px 0;
+  margin: 10px 0;
 }
+
 .highlight-box {
-  background:#faf8f3;
-  border-left:3px solid #b9954b;
-  padding:25px;
-  margin:30px 0;
+  background: #faf8f3;
+  border-left: 3px solid #b9954b;
+  padding: 25px;
+  margin: 30px 0;
 }
+
 .fee-box {
-  text-align:center;
-  border:1px solid #e7ddca;
-  padding:30px 20px;
-  background:white;
+  text-align: center;
+  border: 1px solid #e7ddca;
+  padding: 30px 20px;
+  background: white;
+  margin-top: 30px;
 }
+
 .fee-box strong {
-  display:block;
-  font-size:27px;
-  color:#947439;
+  display: block;
+  font-size: 27px;
+  color: #947439;
 }
-.flow-steps {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:15px;
+
+.teacher-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
 }
-.flow-steps div {
-  border:1px solid #e7ddca;
-  padding:20px;
-  background:white;
+
+.teacher-grid .card {
+  padding: 22px;
+}
+
+.teacher-grid h3 {
+  font-size: 18px;
+}
+
+@media (max-width: 650px) {
+  .course-hero {
+    padding: 65px 18px 50px;
+  }
+
+  .highlight-box {
+    padding: 20px;
+  }
 }
 </style>
 </head>
@@ -73,9 +102,9 @@
 
 <header>
   <a class="brand" href="../index.html">
-    <img src="../lovinity-logo.png" alt="Lovinity Academy ロゴ">
     Lovinity Academy
   </a>
+
   <nav>
     <a href="../index.html">HOME</a>
     <a href="../index.html#courses">COURSES</a>
@@ -86,68 +115,100 @@
 
 <main>
 
+<!-- ページトップ -->
 <div class="course-hero">
   <p class="subtitle">ONLINE ENGLISH</p>
+
   <h1>オンライン英語</h1>
+
   <p>英語がわかる喜びを、伝わる自信へ。</p>
   <p>ジュニア・大人｜マンツーマン</p>
-  <a class="button" href="#trial">無料体験はこちら</a>
+
+  <a class="button" href="#trial">
+    無料体験はこちら
+  </a>
 </div>
 
-<section>
+<!-- 学習方針 -->
+<section id="learning-style">
   <div class="content-narrow">
+
     <h2>OUR LEARNING STYLE</h2>
-    <p class="lead">学ぶことを、日常の習慣に。</p>
+
+    <p class="lead">
+      学ぶことを、日常の習慣に。
+    </p>
 
     <div class="highlight-box">
+
       <p>
         Lovinity Academyのオンライン英語は、
         <strong>1回30分・月8回</strong>。
       </p>
+
       <p>
         短い時間でも定期的に英語に触れ、
-        学ぶことを習慣にするためのレッスン設計です。
+        学ぶことを習慣にするための
+        レッスン設計です。
       </p>
+
       <p>
         週2回を目安に、学習と復習を繰り返すことで、
         知識を少しずつ積み重ねていきます。
       </p>
+
       <p>
         「勉強しなければ」から、
-        <strong>「英語を学ぶことが日常になる」へ。</strong>
+        <strong>
+          「英語を学ぶことが日常になる」へ。
+        </strong>
       </p>
+
       <p>
         一時的な成果だけでなく、
         学び続ける力を育てます。
       </p>
+
     </div>
   </div>
 </section>
 
+<!-- ジュニア英語 -->
 <div class="alt">
 <section id="junior">
+
   <h2>JUNIOR ENGLISH</h2>
-  <p class="lead">ジュニア英語｜中学生・高校入試対策</p>
+
+  <p class="lead">
+    ジュニア英語｜中学生・高校入試対策
+  </p>
 
   <div class="grid">
+
     <div class="card">
       <h3>「英語が苦手」を「わかる！」に。</h3>
+
       <p>
         英語に苦手意識がある中学生を中心に、
         高校入試に向けた英語の基礎力を育てます。
       </p>
+
       <p>
         学校の授業でつまずいた単元まで戻り、
-        一人ひとりの理解度に合わせて丁寧に指導します。
+        一人ひとりの理解度に合わせて
+        丁寧に指導します。
       </p>
+
       <p>
         わからないまま先へ進まず、
-        小さな「できた」を積み重ねていくことを大切にします。
+        小さな「できた」を積み重ねていくことを
+        大切にします。
       </p>
     </div>
 
     <div class="card">
       <h3>学習内容</h3>
+
       <ul class="point-list">
         <li>中学英文法の基礎と復習</li>
         <li>高校入試に必要な英単語・熟語</li>
@@ -157,34 +218,47 @@
         <li>学校の学習進度や目標に合わせた指導</li>
       </ul>
     </div>
+
   </div>
 
   <div class="fee-box">
     <p>ジュニア英語｜月謝（税込）</p>
+
     <strong>¥8,800</strong>
+
     <p>30分 × 月8回｜マンツーマン</p>
     <p>入会金：無料</p>
   </div>
+
 </section>
 </div>
 
+<!-- 大人英語 -->
 <section id="adult">
+
   <h2>ADULT ENGLISH</h2>
-  <p class="lead">大人の英語｜社会人・留学・ワーホリ準備</p>
+
+  <p class="lead">
+    大人の英語｜社会人・留学・ワーホリ準備
+  </p>
 
   <div class="grid">
+
     <div class="card">
       <h3>学ぶ英語から、使える英語へ。</h3>
+
       <p>
         英語を話せるようになりたい。
         仕事で使いたい。
         海外で生活してみたい。
       </p>
+
       <p>
         一人ひとりの目的に合わせて、
         実際に英語を使う機会を大切にした
         マンツーマンレッスンを行います。
       </p>
+
       <p>
         忙しい毎日の中でも、
         英語に触れる時間を習慣にしていきます。
@@ -193,6 +267,7 @@
 
     <div class="card">
       <h3>学習内容</h3>
+
       <ul class="point-list">
         <li>日常英会話</li>
         <li>旅行で使う英語</li>
@@ -202,157 +277,232 @@
         <li>目的に合わせた会話練習</li>
       </ul>
     </div>
+
   </div>
 
   <div class="fee-box">
     <p>大人英語｜月謝（税込）</p>
+
     <strong>¥9,900</strong>
+
     <p>30分 × 月8回｜マンツーマン</p>
     <p>入会金：無料</p>
   </div>
+
 </section>
 
+<!-- 講師審査 -->
 <div class="alt">
 <section id="teachers">
+
   <h2>OUR TEACHERS</h2>
-  <p class="lead">英語力だけでなく、教える力も大切に。</p>
+
+  <p class="lead">
+    英語力だけでなく、教える力も大切に。
+  </p>
 
   <div class="content-narrow">
+
     <p>
-      Lovinity Academyでは、講師の国籍にかかわらず、
-      ネイティブレベルの英語力を採用基準としています。
+      Lovinity Academyでは、
+      講師の国籍にかかわらず、
+      ネイティブレベルの英語力を
+      採用基準としています。
     </p>
+
     <p>
-      英語を話せることと、英語を教えられることは同じではありません。
+      英語を話せることと、
+      英語を教えられることは同じではありません。
       そのため、語学力と発音だけでなく、
       指導適性も確認します。
     </p>
 
-    <div class="grid">
+    <div class="teacher-grid">
+
       <div class="card">
         <h3>01｜語彙・文法</h3>
-        <p>英語の知識と正確性を確認します。</p>
+        <p>
+          英語の知識と正確性を確認します。
+        </p>
       </div>
+
       <div class="card">
         <h3>02｜発音審査</h3>
-        <p>録音によって発音の明瞭さを確認します。</p>
+        <p>
+          録音によって発音の明瞭さを確認します。
+        </p>
       </div>
+
       <div class="card">
         <h3>03｜スピーキング</h3>
-        <p>英語で自然に説明・応答する力を確認します。</p>
+        <p>
+          英語で自然に説明・応答する力を確認します。
+        </p>
       </div>
+
       <div class="card">
         <h3>04｜模擬レッスン</h3>
-        <p>実際の指導場面を想定して評価します。</p>
+        <p>
+          実際の指導場面を想定して評価します。
+        </p>
       </div>
+
       <div class="card">
         <h3>05｜面接・指導適性</h3>
-        <p>年齢や目的に応じた教え方、コミュニケーション力を確認します。</p>
+        <p>
+          年齢や目的に応じた教え方、
+          コミュニケーション力を確認します。
+        </p>
       </div>
+
     </div>
+
   </div>
 </section>
 </div>
 
+<!-- レッスン情報 -->
 <section id="schedule">
+
   <h2>LESSON INFORMATION</h2>
 
   <div class="content-narrow">
+
     <table>
       <tbody>
         <tr>
           <th>対象</th>
           <td>ジュニア・大人</td>
         </tr>
+
         <tr>
           <th>授業形式</th>
           <td>オンライン・マンツーマン</td>
         </tr>
+
         <tr>
           <th>授業時間</th>
           <td>1回30分</td>
         </tr>
+
         <tr>
           <th>授業回数</th>
           <td>月8回</td>
         </tr>
+
         <tr>
           <th>開講時間</th>
           <td>月曜日〜土曜日 7:00〜22:00</td>
         </tr>
+
         <tr>
           <th>受講日時</th>
-          <td>固定曜日・時間制。講師と調整のうえ決定</td>
+          <td>
+            固定曜日・時間制。
+            講師と調整のうえ決定
+          </td>
         </tr>
+
         <tr>
           <th>お支払い</th>
           <td>PayPay・前月末までの前払い</td>
         </tr>
+
         <tr>
           <th>無料体験</th>
-          <td>各コース1回まで・30分（説明を含む）</td>
+          <td>
+            各コース1回まで・30分
+            （スクール説明を含む）
+          </td>
         </tr>
       </tbody>
     </table>
 
     <div class="highlight-box">
+
       <h3>欠席・振替について</h3>
+
       <p>
         欠席は前日までにご連絡ください。
-        期限内のご連絡で、月2回（30分×2回）まで
+        期限内のご連絡で、
+        月2回（30分×2回）まで
         振替をご相談いただけます。
       </p>
+
       <p>
         振替は当月中を基本とし、
         最長で翌月末までとなります。
       </p>
+
       <p>
         講師都合による休講は振替で対応します。
-        通信トラブルは原因や状況に応じて個別に対応します。
+        通信トラブルは原因や状況に応じて
+        個別に対応します。
       </p>
+
     </div>
   </div>
+
 </section>
 
+<!-- 無料体験 -->
 <div class="alt">
 <section id="trial" class="center">
+
   <h2>FREE TRIAL LESSON</h2>
-  <p class="lead">まずは30分、英語を学ぶ時間を体験してみませんか？</p>
-  <p>
-    無料体験は各コース1回まで。<br>
-    レッスンとスクール説明を30分以内に行います。
+
+  <p class="lead">
+    まずは30分、
+    英語を学ぶ時間を体験してみませんか？
   </p>
 
-  <a class="button"
-     href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
-     target="_blank"
-     rel="noopener noreferrer">
+  <p>
+    無料体験は各コース1回まで。<br>
+    レッスンとスクール説明を
+    30分以内に行います。
+  </p>
+
+  <a
+    class="button"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
+    target="_blank"
+    rel="noopener noreferrer">
     無料体験を申し込む
   </a>
 
   <p class="muted">
-    ※フォーム送信後に日程を調整します。
+    ※フォーム送信後に日程を調整します。<br>
     送信時点では予約確定となりません。
   </p>
+
 </section>
 </div>
 
 </main>
 
+<!-- フッター -->
 <footer>
+
   <strong>Lovinity Academy</strong>
+
   <p>Dream, Create, Shine.</p>
+
   <p>
     <a href="../index.html">HOME</a>　
     <a href="../terms.html">受講規約</a>　
-    <a href="../privacy.html">プライバシーポリシー</a>
+    <a href="../privacy.html">
+      プライバシーポリシー
+    </a>
   </p>
+
   <p>
     <a href="mailto:lovinityacademy@gmail.com">
       lovinityacademy@gmail.com
     </a>
   </p>
+
   <small>© 2026 Lovinity Academy</small>
+
 </footer>
 
 </body>
