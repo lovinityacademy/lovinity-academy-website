@@ -742,5 +742,76 @@ footer small{color:#aaa}
   <small>© 2026 Lovinity Academy</small>
 </footer>
 
+<!-- スマートフォン用・無料体験固定ボタン -->
+<div class="mobile-trial-bar">
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="mobile-trial-button"
+  >
+    無料体験レッスンを申し込む
+    <span aria-hidden="true">→</span>
+  </a>
+  <p>各コースお一人様1回まで</p>
+</div>
+
+<style>
+.mobile-trial-bar {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-trial-bar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 11px 16px
+      calc(9px + env(safe-area-inset-bottom));
+    background: rgba(255, 255, 255, 0.97);
+    border-top: 1px solid #e7ddca;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.06);
+  }
+
+  .mobile-trial-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    min-height: 49px;
+    padding: 11px 15px;
+    background: #b9954b;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .mobile-trial-button:hover,
+  .mobile-trial-button:focus-visible {
+    background: #947439;
+  }
+
+  .mobile-trial-bar p {
+    margin: 5px 0 0;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #777777;
+  }
+
+  body {
+    padding-bottom: calc(
+      100px + env(safe-area-inset-bottom)
+    );
+  }
+}
+</style>
+
 </body>
 </html>
