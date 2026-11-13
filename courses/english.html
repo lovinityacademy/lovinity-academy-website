@@ -4,49 +4,90 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <meta name="description" content="Lovinity Academyのオンライン英語。中学生の高校入試対策から大人の実践英会話まで。30分×月8回のマンツーマンレッスン。">
 
 <title>オンライン英語 | Lovinity Academy</title>
 
 <link rel="icon" href="../lovinity-logo.png">
-<link rel="stylesheet" href="../style.css">
+<link rel="apple-touch-icon" href="../lovinity-logo.png">
 
 <style>
+:root {
+  --gold: #b9954b;
+  --gold-dark: #8c6c32;
+  --ink: #252525;
+  --muted: #777;
+  --cream: #faf8f3;
+  --warm: #f5efe3;
+  --blue: #eaf3f6;
+  --mint: #edf4ed;
+  --line: #e8dfcf;
+  --white: #fff;
+}
 
-/* トップページと共通のヘッダー */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--white);
+  color: var(--ink);
+  font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN",
+               "Yu Gothic", Arial, sans-serif;
+  line-height: 1.85;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  scroll-margin-top: 110px;
+}
+
+/* 共通ヘッダー */
+
 header {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   background: rgba(255,255,255,.97);
-  border-bottom: 1px solid #e7ddca;
+  border-bottom: 1px solid var(--line);
   padding: 12px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
+  backdrop-filter: blur(12px);
 }
 
-header .brand {
+.brand {
   display: flex;
   align-items: center;
   gap: 10px;
+  color: var(--gold);
   font-family: Georgia, serif;
   font-size: 19px;
   font-weight: bold;
   letter-spacing: 1px;
-  color: #b9954b;
   text-decoration: none;
 }
 
-header .brand img {
+.brand img {
   display: block;
   width: 38px;
   height: 38px;
-  max-width: 38px;
-  max-height: 38px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -58,14 +99,625 @@ header nav {
 }
 
 header nav a {
-  color: #202020;
   font-size: 11px;
-  text-decoration: none;
   letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--ink);
 }
 
 header nav a:hover {
-  color: #b9954b;
+  color: var(--gold);
+}
+
+/* 共通パーツ */
+
+.container {
+  width: min(1120px, 90%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.bg-cream {
+  background: var(--cream);
+}
+
+.bg-blue {
+  background: var(--blue);
+}
+
+.eyebrow {
+  display: block;
+  color: var(--gold-dark);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.section-heading h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(29px, 4vw, 43px);
+  font-weight: normal;
+  line-height: 1.3;
+  margin: 0 0 12px;
+  letter-spacing: 1px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.gold-line {
+  width: 48px;
+  height: 2px;
+  background: var(--gold);
+  margin: 18px auto;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 13px 28px;
+  background: var(--gold);
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .4px;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: var(--gold-dark);
+  border-color: var(--gold-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--gold-dark);
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: white;
+}
+
+.small-note {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.photo-credit {
+  font-size: 11px;
+  color: var(--muted);
+  text-align: right;
+  margin-top: 8px;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #fff 0%,
+    #fbf8f1 55%,
+    #f2eadb 100%
+  );
+}
+
+.hero-inner {
+  width: min(1220px, 92%);
+  margin: auto;
+  min-height: 650px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+  padding: 70px 0;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-copy h1 {
+  font-family: Georgia, "Yu Mincho", serif;
+  font-size: clamp(37px, 5vw, 65px);
+  font-weight: normal;
+  line-height: 1.48;
+  letter-spacing: 1px;
+  margin: 12px 0 22px;
+}
+
+.hero-copy h1 em {
+  color: var(--gold-dark);
+  font-style: normal;
+}
+
+.hero-copy .description {
+  max-width: 460px;
+  color: #5d5d5d;
+  font-size: 15px;
+  line-height: 2.1;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.hero-tags span {
+  font-size: 12px;
+  background: rgba(255,255,255,.8);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: 6px 13px;
+}
+
+.hero-photo-wrap {
+  position: relative;
+  padding: 15px 15px 25px 0;
+}
+
+.hero-photo {
+  display: block;
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+  border-radius: 180px 180px 8px 8px;
+  box-shadow: 0 20px 50px rgba(65,50,25,.10);
+}
+
+.hero-sticker {
+  position: absolute;
+  bottom: 6px;
+  left: -25px;
+  background: white;
+  padding: 18px 24px;
+  border-radius: 7px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+.hero-sticker strong {
+  display: block;
+  color: var(--gold-dark);
+  font-family: Georgia, serif;
+  font-size: 27px;
+  line-height: 1.3;
+}
+
+.hero-sticker span {
+  display: block;
+  font-size: 11px;
+  color: #666;
+}
+
+/* BENEFITS */
+
+.benefits {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+}
+
+.benefit {
+  padding: 25px 20px;
+  text-align: center;
+}
+
+.benefit + .benefit {
+  border-left: 1px solid var(--line);
+}
+
+.benefit strong {
+  display: block;
+  font-family: Georgia, serif;
+  color: var(--gold-dark);
+  font-size: clamp(25px, 4vw, 37px);
+  line-height: 1.4;
+}
+
+.benefit span {
+  font-size: 12px;
+  color: #666;
+}
+
+/* INTRO */
+
+.intro {
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+}
+
+.intro h2 {
+  font-family: Georgia, "Yu Mincho", serif;
+  font-weight: normal;
+  font-size: clamp(25px, 4vw, 38px);
+  line-height: 1.7;
+  margin: 0 0 28px;
+}
+
+.intro p {
+  font-size: 15px;
+  line-height: 2.4;
+  color: #555;
+}
+
+.intro strong {
+  color: var(--gold-dark);
+}
+
+/* COURSES */
+
+.course-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 65px;
+  margin: 65px 0;
+}
+
+.course-feature.reverse .course-visual {
+  order: 2;
+}
+
+.course-visual {
+  position: relative;
+}
+
+.course-visual img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.course-visual .photo-label {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+  background: rgba(255,255,255,.94);
+  padding: 11px 17px;
+  border-radius: 4px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.course-copy .number {
+  font-family: Georgia, serif;
+  color: var(--gold);
+  font-size: 17px;
+}
+
+.course-copy h3 {
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: clamp(32px, 4vw, 43px);
+  margin: 10px 0 5px;
+  line-height: 1.3;
+}
+
+.course-copy .course-subtitle {
+  color: var(--gold-dark);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.course-copy h4 {
+  font-size: clamp(19px, 2.7vw, 25px);
+  line-height: 1.65;
+  margin: 24px 0 15px;
+}
+
+.course-copy p {
+  color: #555;
+  font-size: 14px;
+}
+
+.course-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 18px;
+}
+
+.course-list li {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.course-list li::before {
+  content: "✓";
+  color: var(--gold-dark);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.price-panel {
+  margin-top: 26px;
+  padding: 20px 22px;
+  background: white;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.price-panel .price-label {
+  font-size: 12px;
+  color: #777;
+}
+
+.price-panel .price-value {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  color: var(--gold-dark);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.price-panel .price-value small {
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.course-copy .btn {
+  margin-top: 23px;
+}
+
+/* HOW IT WORKS */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.step {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  text-align: center;
+}
+
+.step .step-num {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  color: var(--gold);
+}
+
+.step h3 {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.step p {
+  color: #666;
+  font-size: 13px;
+}
+
+/* TEACHERS */
+
+.teacher-intro {
+  max-width: 780px;
+  margin: 0 auto 35px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+
+.teacher-process {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.teacher-step {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 24px 16px;
+  text-align: center;
+  background: white;
+}
+
+.teacher-step .num {
+  display: block;
+  font-family: Georgia, serif;
+  color: var(--gold);
+  font-size: 29px;
+  margin-bottom: 10px;
+}
+
+.teacher-step h3 {
+  font-size: 13px;
+  margin: 0 0 10px;
+}
+
+.teacher-step p {
+  color: #777;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* LESSON INFORMATION */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.info-card {
+  background: white;
+  border: 1px solid var(--line);
+  padding: 35px;
+  border-radius: 7px;
+}
+
+.info-card h3 {
+  font-size: 19px;
+  margin: 0 0 23px;
+  color: var(--gold-dark);
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 14px;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+  font-size: 13px;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row strong {
+  color: #555;
+}
+
+.info-row span {
+  color: #666;
+}
+
+/* CTA */
+
+.cta-section {
+  background: linear-gradient(135deg, #f6f0e4, #eaf3f6);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-family: Georgia, "Yu Mincho", serif;
+  font-weight: normal;
+  font-size: clamp(29px, 4vw, 43px);
+  line-height: 1.6;
+  margin: 10px 0 20px;
+}
+
+.cta-section p {
+  font-size: 14px;
+  color: #555;
+  line-height: 2;
+}
+
+.cta-section .btn {
+  margin: 20px 0 15px;
+}
+
+.cta-section .small-note {
+  max-width: 520px;
+  margin: auto;
+}
+
+/* FOOTER */
+
+footer {
+  background: #252525;
+  color: white;
+  text-align: center;
+  padding: 55px 20px;
+}
+
+footer .footer-brand {
+  display: block;
+  font-family: Georgia, serif;
+  color: var(--gold);
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+footer .footer-tagline {
+  font-family: Georgia, serif;
+  letter-spacing: 2px;
+  color: #ddd;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+footer a:hover {
+  color: var(--gold);
+}
+
+footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  margin: 25px 0;
+}
+
+footer small {
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .hero-inner {
+    gap: 30px;
+  }
+
+  .hero-photo {
+    height: 440px;
+  }
+
+  .course-feature {
+    gap: 35px;
+  }
+
+  .teacher-process {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 650px) {
@@ -77,84 +729,121 @@ header nav a:hover {
     justify-content: center;
     gap: 11px;
   }
-}
 
-
-/* ページ上部 */
-.course-hero {
-  background: linear-gradient(145deg, #fff, #f7f2e7);
-  text-align: center;
-  padding: 85px 20px 65px;
-}
-
-.course-hero h1 {
-  font-family: Georgia, serif;
-  font-size: clamp(30px, 5vw, 46px);
-  font-weight: normal;
-  margin: 12px 0;
-}
-
-.course-hero .subtitle {
-  color: #947439;
-  letter-spacing: 2px;
-}
-
-.content-narrow {
-  max-width: 850px;
-  margin: auto;
-}
-
-.point-list {
-  padding-left: 24px;
-}
-
-.point-list li {
-  margin: 10px 0;
-}
-
-.highlight-box {
-  background: #faf8f3;
-  border-left: 3px solid #b9954b;
-  padding: 25px;
-  margin: 30px 0;
-}
-
-.fee-box {
-  text-align: center;
-  border: 1px solid #e7ddca;
-  padding: 30px 20px;
-  background: white;
-  margin-top: 30px;
-}
-
-.fee-box strong {
-  display: block;
-  font-size: 27px;
-  color: #947439;
-}
-
-.teacher-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
-  margin-top: 30px;
-}
-
-.teacher-grid .card {
-  padding: 22px;
-}
-
-.teacher-grid h3 {
-  font-size: 18px;
-}
-
-@media (max-width: 650px) {
-  .course-hero {
-    padding: 65px 18px 50px;
+  .brand {
+    font-size: 19px;
   }
 
-  .highlight-box {
-    padding: 20px;
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 55px 0 65px;
+    gap: 38px;
+  }
+
+  .hero-copy {
+    text-align: center;
+  }
+
+  .hero-copy .description {
+    margin: auto;
+  }
+
+  .hero-actions,
+  .hero-tags {
+    justify-content: center;
+  }
+
+  .hero-photo-wrap {
+    width: 90%;
+    margin: auto;
+    padding: 0 0 20px;
+  }
+
+  .hero-photo {
+    height: 360px;
+    border-radius: 140px 140px 8px 8px;
+  }
+
+  .hero-sticker {
+    left: -10px;
+    padding: 12px 18px;
+  }
+
+  .hero-sticker strong {
+    font-size: 22px;
+  }
+
+  .benefits {
+    padding: 10px 0;
+  }
+
+  .benefit {
+    padding: 20px 8px;
+  }
+
+  .benefit strong {
+    font-size: 24px;
+  }
+
+  .benefit span {
+    font-size: 10px;
+  }
+
+  .section {
+    padding: 65px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 38px;
+  }
+
+  .course-feature,
+  .course-feature.reverse {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin: 40px 0 70px;
+  }
+
+  .course-feature.reverse .course-visual {
+    order: 0;
+  }
+
+  .course-visual img {
+    height: 320px;
+  }
+
+  .course-list {
+    gap: 10px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-process {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    padding: 25px 20px;
+  }
+
+  .cta-section {
+    padding: 75px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .btn {
+    transition: none;
   }
 }
 </style>
@@ -162,6 +851,7 @@ header nav a:hover {
 
 <body>
 
+<!-- HEADER -->
 <header>
   <a class="brand" href="../index.html">
     <img src="../lovinity-logo.png" alt="Lovinity Academy ロゴ">
@@ -180,243 +870,314 @@ header nav a:hover {
 
 <main>
 
-<!-- ページトップ -->
-<div class="course-hero">
-  <p class="subtitle">ONLINE ENGLISH</p>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
 
-  <h1>オンライン英語</h1>
+    <div class="hero-copy">
+      <span class="eyebrow">LOVINITY ONLINE ENGLISH</span>
 
-  <p>英語がわかる喜びを、伝わる自信へ。</p>
-  <p>ジュニア・大人｜マンツーマン</p>
+      <h1>
+        英語が変わる。<br>
+        <em>未来が広がる。</em>
+      </h1>
 
-  <a class="button" href="#trial">
-    無料体験はこちら
-  </a>
+      <p class="description">
+        「英語が苦手」を「わかる！」に。<br>
+        「いつか話したい」を「話せる！」に。<br>
+        あなたのペースで、一歩ずつ。
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#trial">
+          無料体験レッスン
+          <span aria-hidden="true">→</span>
+        </a>
+
+        <a class="btn btn-outline" href="#courses">
+          コースを見る
+        </a>
+      </div>
+
+      <div class="hero-tags">
+        <span>マンツーマン</span>
+        <span>1回30分</span>
+        <span>月8回</span>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <img
+        class="hero-photo"
+        src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+        alt="ノートを広げて学習するイメージ写真"
+        fetchpriority="high"
+        onerror="this.onerror=null;this.src='../course-english.jpg.PNG';">
+
+      <div class="hero-sticker">
+        <strong>30 min × 8</strong>
+        <span>学びを、毎日の習慣に。</span>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<!-- 学習方針 -->
-<section id="learning-style">
-  <div class="content-narrow">
+<!-- BENEFITS -->
+<div class="benefits">
+  <div class="container benefit-grid">
 
-    <h2>OUR LEARNING STYLE</h2>
-
-    <p class="lead">
-      学ぶことを、日常の習慣に。
-    </p>
-
-    <div class="highlight-box">
-
-      <p>
-        Lovinity Academyのオンライン英語は、
-        <strong>1回30分・月8回</strong>。
-      </p>
-
-      <p>
-        短い時間でも定期的に英語に触れ、
-        学ぶことを習慣にするための
-        レッスン設計です。
-      </p>
-
-      <p>
-        週2回を目安に、学習と復習を繰り返すことで、
-        知識を少しずつ積み重ねていきます。
-      </p>
-
-      <p>
-        「勉強しなければ」から、
-        <strong>
-          「英語を学ぶことが日常になる」へ。
-        </strong>
-      </p>
-
-      <p>
-        一時的な成果だけでなく、
-        学び続ける力を育てます。
-      </p>
-
-    </div>
-  </div>
-</section>
-
-<!-- ジュニア英語 -->
-<div class="alt">
-<section id="junior">
-
-  <h2>JUNIOR ENGLISH</h2>
-
-  <p class="lead">
-    ジュニア英語｜中学生・高校入試対策
-  </p>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>「英語が苦手」を「わかる！」に。</h3>
-
-      <p>
-        英語に苦手意識がある中学生を中心に、
-        高校入試に向けた英語の基礎力を育てます。
-      </p>
-
-      <p>
-        学校の授業でつまずいた単元まで戻り、
-        一人ひとりの理解度に合わせて
-        丁寧に指導します。
-      </p>
-
-      <p>
-        わからないまま先へ進まず、
-        小さな「できた」を積み重ねていくことを
-        大切にします。
-      </p>
+    <div class="benefit">
+      <strong>30 min</strong>
+      <span>集中しやすい授業時間</span>
     </div>
 
-    <div class="card">
-      <h3>学習内容</h3>
+    <div class="benefit">
+      <strong>8 lessons</strong>
+      <span>月8回・週2回目安</span>
+    </div>
 
-      <ul class="point-list">
-        <li>中学英文法の基礎と復習</li>
-        <li>高校入試に必要な英単語・熟語</li>
-        <li>長文読解の基礎</li>
-        <li>英作文の練習</li>
-        <li>苦手単元の重点学習</li>
-        <li>学校の学習進度や目標に合わせた指導</li>
-      </ul>
+    <div class="benefit">
+      <strong>1 on 1</strong>
+      <span>自分のペースで学べる</span>
     </div>
 
   </div>
-
-  <div class="fee-box">
-    <p>ジュニア英語｜月謝（税込）</p>
-
-    <strong>¥8,800</strong>
-
-    <p>30分 × 月8回｜マンツーマン</p>
-    <p>入会金：無料</p>
-  </div>
-
-</section>
 </div>
 
-<!-- 大人英語 -->
-<section id="adult">
+<!-- INTRO -->
+<section class="section">
+  <div class="container intro">
 
-  <h2>ADULT ENGLISH</h2>
+    <span class="eyebrow">OUR LEARNING STYLE</span>
 
-  <p class="lead">
-    大人の英語｜社会人・留学・ワーホリ準備
-  </p>
-
-  <div class="grid">
-
-    <div class="card">
-      <h3>学ぶ英語から、使える英語へ。</h3>
-
-      <p>
-        英語を話せるようになりたい。
-        仕事で使いたい。
-        海外で生活してみたい。
-      </p>
-
-      <p>
-        一人ひとりの目的に合わせて、
-        実際に英語を使う機会を大切にした
-        マンツーマンレッスンを行います。
-      </p>
-
-      <p>
-        忙しい毎日の中でも、
-        英語に触れる時間を習慣にしていきます。
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>学習内容</h3>
-
-      <ul class="point-list">
-        <li>日常英会話</li>
-        <li>旅行で使う英語</li>
-        <li>仕事でのコミュニケーション</li>
-        <li>留学・ワーキングホリデー準備</li>
-        <li>発音とリスニング</li>
-        <li>目的に合わせた会話練習</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="fee-box">
-    <p>大人英語｜月謝（税込）</p>
-
-    <strong>¥9,900</strong>
-
-    <p>30分 × 月8回｜マンツーマン</p>
-    <p>入会金：無料</p>
-  </div>
-
-</section>
-
-<!-- 講師審査 -->
-<div class="alt">
-<section id="teachers">
-
-  <h2>OUR TEACHERS</h2>
-
-  <p class="lead">
-    英語力だけでなく、教える力も大切に。
-  </p>
-
-  <div class="content-narrow">
+    <h2>
+      英語を学ぶことが、<br>
+      特別なことではなくなるように。
+    </h2>
 
     <p>
-      Lovinity Academyでは、
-      講師の国籍にかかわらず、
-      ネイティブレベルの英語力を
-      採用基準としています。
+      Lovinity Academyのオンライン英語は、<br>
+      <strong>1回30分・月8回。</strong>
     </p>
 
     <p>
-      英語を話せることと、
-      英語を教えられることは同じではありません。
-      そのため、語学力と発音だけでなく、
-      指導適性も確認します。
+      短い時間でも定期的に英語に触れ、<br>
+      週2回を目安に学習と復習を繰り返す。<br>
+      知識を少しずつ積み重ねながら、<br>
+      学ぶことを日常の習慣にしていきます。
     </p>
 
-    <div class="teacher-grid">
+    <p>
+      一時的な成果だけでなく、<br>
+      <strong>学び続ける力を育てること。</strong><br>
+      それが私たちの大切にする学習スタイルです。
+    </p>
 
-      <div class="card">
-        <h3>01｜語彙・文法</h3>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="section bg-cream" id="courses">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">FIND YOUR COURSE</span>
+      <h2>Two Paths, One Future.</h2>
+      <div class="gold-line"></div>
+      <p>目的に合わせて選べる、2つの英語コース。</p>
+    </div>
+
+    <!-- JUNIOR -->
+    <article class="course-feature" id="junior">
+
+      <div class="course-visual">
+        <img
+          src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+          alt="学習に取り組む生徒のイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-english.jpg.PNG';">
+
+        <span class="photo-label">JUNIOR ENGLISH</span>
+      </div>
+
+      <div class="course-copy">
+
+        <span class="number">01 / JUNIOR</span>
+
+        <h3>Junior English</h3>
+        <span class="course-subtitle">
+          ジュニア英語｜中学生・高校入試対策
+        </span>
+
+        <h4>
+          「英語が苦手」を、<br>
+          「わかる！」に変える。
+        </h4>
+
         <p>
-          英語の知識と正確性を確認します。
+          英語に苦手意識がある中学生を中心に、
+          高校入試に必要な基礎力を育てます。
+        </p>
+
+        <p>
+          学校の授業でつまずいた単元まで戻り、
+          一人ひとりの理解度に合わせて丁寧に指導。
+          わからないまま先へ進まず、
+          小さな「できた」を積み重ねます。
+        </p>
+
+        <ul class="course-list">
+          <li>中学英文法の基礎と復習</li>
+          <li>英単語・熟語</li>
+          <li>長文読解の基礎</li>
+          <li>英作文の練習</li>
+          <li>苦手単元の重点学習</li>
+          <li>学校の進度・目標に対応</li>
+        </ul>
+
+        <div class="price-panel">
+          <div>
+            <div class="price-label">
+              月額料金（税込）
+            </div>
+            <div class="small-note">
+              30分×月8回｜入会金無料
+            </div>
+          </div>
+
+          <div class="price-value">
+            ¥8,800<small> / 月</small>
+          </div>
+        </div>
+
+        <a class="btn" href="#trial">
+          ジュニア英語を無料体験
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+    </article>
+
+    <!-- ADULT -->
+    <article class="course-feature reverse" id="adult">
+
+      <div class="course-visual">
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+          alt="パソコンを使った学習やコミュニケーションのイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-english.jpg.PNG';">
+
+        <span class="photo-label">ADULT ENGLISH</span>
+      </div>
+
+      <div class="course-copy">
+
+        <span class="number">02 / ADULT</span>
+
+        <h3>Adult English</h3>
+        <span class="course-subtitle">
+          大人の英語｜社会人・留学・ワーホリ準備
+        </span>
+
+        <h4>
+          「いつか話したい」を、<br>
+          今日から始めよう。
+        </h4>
+
+        <p>
+          仕事で英語を使いたい。
+          海外で生活してみたい。
+          旅行先で自然に会話したい。
+        </p>
+
+        <p>
+          一人ひとりの目的に合わせて、
+          実際に英語を使う練習を重視。
+          忙しい社会人でも続けやすい
+          マンツーマンレッスンです。
+        </p>
+
+        <ul class="course-list">
+          <li>日常英会話</li>
+          <li>旅行で使う英語</li>
+          <li>仕事での英語</li>
+          <li>留学・ワーホリ準備</li>
+          <li>発音・リスニング</li>
+          <li>目的別の会話練習</li>
+        </ul>
+
+        <div class="price-panel">
+          <div>
+            <div class="price-label">
+              月額料金（税込）
+            </div>
+            <div class="small-note">
+              30分×月8回｜入会金無料
+            </div>
+          </div>
+
+          <div class="price-value">
+            ¥9,900<small> / 月</small>
+          </div>
+        </div>
+
+        <a class="btn" href="#trial">
+          大人英語を無料体験
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+    </article>
+
+    <p class="small-note" style="text-align:center">
+      ※掲載写真はレッスンのイメージです。
+    </p>
+
+  </div>
+</section>
+
+<!-- LEARNING STEPS -->
+<section class="section">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">KEEP LEARNING</span>
+      <h2>Small Steps, Big Growth.</h2>
+      <div class="gold-line"></div>
+      <p>無理なく続けるための、3つの考え方。</p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>短い時間で集中</h3>
+        <p>
+          1回30分だから、
+          忙しい日常にも取り入れやすい。
+          一つひとつの学びを大切にします。
         </p>
       </div>
 
-      <div class="card">
-        <h3>02｜発音審査</h3>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>繰り返して定着</h3>
         <p>
-          録音によって発音の明瞭さを確認します。
+          月8回、週2回を目安に英語に触れる。
+          学習と復習を重ねながら、
+          理解を深めていきます。
         </p>
       </div>
 
-      <div class="card">
-        <h3>03｜スピーキング</h3>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>自信につなげる</h3>
         <p>
-          英語で自然に説明・応答する力を確認します。
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>04｜模擬レッスン</h3>
-        <p>
-          実際の指導場面を想定して評価します。
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>05｜面接・指導適性</h3>
-        <p>
-          年齢や目的に応じた教え方、
-          コミュニケーション力を確認します。
+          自分のペースで質問し、
+          できることを増やしていく。
+          小さな成功体験を大切にします。
         </p>
       </div>
 
@@ -424,141 +1185,256 @@ header nav a:hover {
 
   </div>
 </section>
-</div>
 
-<!-- レッスン情報 -->
-<section id="schedule">
+<!-- TEACHERS -->
+<section class="section bg-blue" id="teachers">
+  <div class="container">
 
-  <h2>LESSON INFORMATION</h2>
+    <div class="section-heading">
+      <span class="eyebrow">OUR TEACHERS</span>
+      <h2>Quality Matters.</h2>
+      <div class="gold-line"></div>
+      <p>英語力だけでなく、教える力も大切に。</p>
+    </div>
 
-  <div class="content-narrow">
+    <div class="teacher-intro">
+      <p>
+        Lovinity Academyでは、
+        講師の国籍にかかわらず、
+        ネイティブレベルの英語力を採用基準としています。
+      </p>
 
-    <table>
-      <tbody>
-        <tr>
-          <th>対象</th>
-          <td>ジュニア・大人</td>
-        </tr>
+      <p>
+        英語を話せることと、教えられることは別。
+        語学力・発音・会話力に加え、
+        指導適性も確認する5段階の審査を設けています。
+      </p>
+    </div>
 
-        <tr>
-          <th>授業形式</th>
-          <td>オンライン・マンツーマン</td>
-        </tr>
+    <div class="teacher-process">
 
-        <tr>
-          <th>授業時間</th>
-          <td>1回30分</td>
-        </tr>
+      <div class="teacher-step">
+        <span class="num">01</span>
+        <h3>語彙・文法</h3>
+        <p>
+          英語の知識と
+          正確性を確認
+        </p>
+      </div>
 
-        <tr>
-          <th>授業回数</th>
-          <td>月8回</td>
-        </tr>
+      <div class="teacher-step">
+        <span class="num">02</span>
+        <h3>発音審査</h3>
+        <p>
+          録音によって
+          発音の明瞭さを確認
+        </p>
+      </div>
 
-        <tr>
-          <th>開講時間</th>
-          <td>月曜日〜土曜日 7:00〜22:00</td>
-        </tr>
+      <div class="teacher-step">
+        <span class="num">03</span>
+        <h3>スピーキング</h3>
+        <p>
+          自然な説明力と
+          応答力を確認
+        </p>
+      </div>
 
-        <tr>
-          <th>受講日時</th>
-          <td>
+      <div class="teacher-step">
+        <span class="num">04</span>
+        <h3>模擬レッスン</h3>
+        <p>
+          実際の指導場面を
+          想定して評価
+        </p>
+      </div>
+
+      <div class="teacher-step">
+        <span class="num">05</span>
+        <h3>面接・指導適性</h3>
+        <p>
+          年齢や目的に応じた
+          指導力を確認
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- INFORMATION -->
+<section class="section bg-cream" id="schedule">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">LESSON INFORMATION</span>
+      <h2>Lesson Guide</h2>
+      <div class="gold-line"></div>
+      <p>安心して始めるために。</p>
+    </div>
+
+    <div class="info-grid">
+
+      <div class="info-card">
+        <h3>レッスン概要</h3>
+
+        <div class="info-row">
+          <strong>対象</strong>
+          <span>ジュニア・大人</span>
+        </div>
+
+        <div class="info-row">
+          <strong>授業形式</strong>
+          <span>オンライン・マンツーマン</span>
+        </div>
+
+        <div class="info-row">
+          <strong>授業時間</strong>
+          <span>1回30分</span>
+        </div>
+
+        <div class="info-row">
+          <strong>授業回数</strong>
+          <span>月8回</span>
+        </div>
+
+        <div class="info-row">
+          <strong>開講時間</strong>
+          <span>月〜土曜日 7:00〜22:00</span>
+        </div>
+
+        <div class="info-row">
+          <strong>受講日時</strong>
+          <span>
             固定曜日・時間制。
             講師と調整のうえ決定
-          </td>
-        </tr>
+          </span>
+        </div>
 
-        <tr>
-          <th>お支払い</th>
-          <td>PayPay・前月末までの前払い</td>
-        </tr>
+        <div class="info-row">
+          <strong>お支払い</strong>
+          <span>
+            PayPay・前月末までの前払い
+          </span>
+        </div>
 
-        <tr>
-          <th>無料体験</th>
-          <td>
-            各コース1回まで・30分
+        <div class="info-row">
+          <strong>無料体験</strong>
+          <span>
+            各コース1回・30分
             （スクール説明を含む）
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          </span>
+        </div>
+      </div>
 
-    <div class="highlight-box">
+      <div class="info-card">
+        <h3>欠席・振替について</h3>
 
-      <h3>欠席・振替について</h3>
+        <div class="info-row">
+          <strong>欠席連絡</strong>
+          <span>
+            レッスン前日までにご連絡ください。
+          </span>
+        </div>
 
-      <p>
-        欠席は前日までにご連絡ください。
-        期限内のご連絡で、
-        月2回（30分×2回）まで
-        振替をご相談いただけます。
-      </p>
+        <div class="info-row">
+          <strong>振替回数</strong>
+          <span>
+            期限内のご連絡で、
+            月2回（30分×2回）まで
+            ご相談いただけます。
+          </span>
+        </div>
 
-      <p>
-        振替は当月中を基本とし、
-        最長で翌月末までとなります。
-      </p>
+        <div class="info-row">
+          <strong>振替期限</strong>
+          <span>
+            当月中を基本とし、
+            最長で翌月末まで。
+          </span>
+        </div>
 
-      <p>
-        講師都合による休講は振替で対応します。
-        通信トラブルは原因や状況に応じて
-        個別に対応します。
-      </p>
+        <div class="info-row">
+          <strong>講師都合</strong>
+          <span>
+            講師都合による休講は
+            振替で対応します。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>通信障害</strong>
+          <span>
+            原因や状況に応じて
+            個別に対応します。
+          </span>
+        </div>
+
+        <p class="small-note" style="margin-top:25px">
+          ご不明な点は、無料体験のお申し込み時に
+          お気軽にお問い合わせください。
+        </p>
+      </div>
 
     </div>
-  </div>
 
+  </div>
 </section>
 
-<!-- 無料体験 -->
-<div class="alt">
-<section id="trial" class="center">
+<!-- FREE TRIAL -->
+<section class="cta-section" id="trial">
 
-  <h2>FREE TRIAL LESSON</h2>
+  <span class="eyebrow">YOUR FIRST STEP</span>
 
-  <p class="lead">
-    まずは30分、
-    英語を学ぶ時間を体験してみませんか？
-  </p>
+  <h2>
+    その一歩が、<br>
+    未来を変えるかもしれない。
+  </h2>
 
   <p>
-    無料体験は各コース1回まで。<br>
-    レッスンとスクール説明を
-    30分以内に行います。
+    英語を学び直したい方も、<br>
+    初めてチャレンジする方も。<br>
+    まずは30分、体験してみませんか？
   </p>
 
   <a
-    class="button"
+    class="btn"
     href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
     target="_blank"
     rel="noopener noreferrer">
-    無料体験を申し込む
+    無料体験レッスンを申し込む
+    <span aria-hidden="true">→</span>
   </a>
 
-  <p class="muted">
-    ※フォーム送信後に日程を調整します。<br>
+  <p class="small-note">
+    無料体験は各コースお一人様1回まで。<br>
+    レッスンとスクール説明を30分以内に行います。<br>
+    フォーム送信後に日程を調整します。<br>
     送信時点では予約確定となりません。
   </p>
 
 </section>
-</div>
 
 </main>
 
-<!-- フッター -->
+<!-- FOOTER -->
 <footer>
 
-  <strong>Lovinity Academy</strong>
+  <span class="footer-brand">
+    Lovinity Academy
+  </span>
 
-  <p>Dream, Create, Shine.</p>
-
-  <p>
-    <a href="../index.html">HOME</a>　
-    <a href="../terms.html">受講規約</a>　
-    <a href="../privacy.html">
-      プライバシーポリシー
-    </a>
+  <p class="footer-tagline">
+    Dream, Create, Shine.
   </p>
+
+  <div class="footer-links">
+    <a href="../index.html">HOME</a>
+    <a href="../index.html#courses">COURSES</a>
+    <a href="../terms.html">受講規約</a>
+    <a href="../privacy.html">プライバシーポリシー</a>
+  </div>
 
   <p>
     <a href="mailto:lovinityacademy@gmail.com">
@@ -566,7 +1442,9 @@ header nav a:hover {
     </a>
   </p>
 
-  <small>© 2026 Lovinity Academy</small>
+  <small>
+    &copy; 2026 Lovinity Academy
+  </small>
 
 </footer>
 
