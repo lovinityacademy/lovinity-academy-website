@@ -1471,12 +1471,63 @@ footer small {
 
 </main>
 
+
 <!-- FOOTER -->
 <footer>
   <h2>Lovinity Academy</h2>
   <p>Dream, Create, Shine.</p>
+
+  <!-- LEGAL LINKS -->
+  <nav class="footer-legal-links" aria-label="規約・運営情報">
+    <a href="terms.html">受講規約</a>
+    <a href="privacy.html">プライバシーポリシー</a>
+    <a href="tokushoho.html">特定商取引法に基づく表記</a>
+  </nav>
+
   <small>&copy; 2026 Lovinity Academy</small>
 </footer>
+
+<style>
+/* FOOTER LEGAL LINKS */
+.footer-legal-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  margin: 24px auto 18px;
+  padding: 0 16px;
+}
+
+.footer-legal-links a {
+  color: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.8;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.footer-legal-links a:hover,
+.footer-legal-links a:focus-visible {
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .footer-legal-links {
+    gap: 8px 18px;
+    margin: 20px auto 16px;
+  }
+
+  .footer-legal-links a {
+    font-size: 11px;
+  }
+}
+</style>
+
 
 <!-- MOBILE FIXED TRIAL BUTTON -->
 <div class="mobile-trial-bar">
