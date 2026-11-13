@@ -1,0 +1,1165 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Lovinity Academyのオンライン韓国語。推し活・K-POP・韓国旅行・留学・ワーホリに。月8回・30分のマンツーマンレッスン。">
+<title>オンライン韓国語 | Lovinity Academy</title>
+<link rel="icon" href="../lovinity-logo.png">
+<link rel="apple-touch-icon" href="../lovinity-logo.png">
+
+<style>
+:root {
+  --gold: #b9954b;
+  --gold-dark: #8c6c32;
+  --ink: #252525;
+  --muted: #666;
+  --cream: #faf8f3;
+  --lav: #f2eef9;
+  --pink: #fff0f3;
+  --line: #e8dfcf;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN",
+               "Yu Gothic", Arial, sans-serif;
+  line-height: 1.85;
+}
+
+a { color: inherit; }
+img { max-width: 100%; }
+section { scroll-margin-top: 105px; }
+
+/* HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,.97);
+  border-bottom: 1px solid var(--line);
+  padding: 12px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  backdrop-filter: blur(12px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.brand img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+header nav a {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: var(--gold);
+}
+
+/* COMMON */
+
+.container {
+  width: min(1120px, 90%);
+  margin: auto;
+}
+
+.section { padding: 95px 0; }
+.cream { background: var(--cream); }
+.lavender { background: var(--lav); }
+
+.eyebrow {
+  display: block;
+  color: var(--gold-dark);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 14px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading h2 {
+  font: normal clamp(29px,4vw,43px)/1.4 Georgia,
+        "Yu Mincho", serif;
+  margin: 0 0 12px;
+}
+
+.section-heading p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.gold-line {
+  height: 2px;
+  width: 48px;
+  background: var(--gold);
+  margin: 18px auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 12px 27px;
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: .2s;
+}
+
+.btn:hover {
+  background: var(--gold-dark);
+  border-color: var(--gold-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--gold-dark);
+}
+
+.btn-outline:hover { color: white; }
+
+.note {
+  font-size: 12px;
+  color: #777;
+}
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(
+    130deg, #fff 0%, #faf8f3 53%, #f4edf8 100%
+  );
+}
+
+.hero-inner {
+  width: min(1220px,92%);
+  min-height: 620px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  align-items: center;
+  padding: 65px 0;
+}
+
+.hero h1 {
+  font: normal clamp(35px,5vw,62px)/1.48 Georgia,
+        "Yu Mincho", serif;
+  letter-spacing: 1px;
+  margin: 12px 0 20px;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--gold-dark);
+}
+
+.hero p {
+  font-size: 15px;
+  color: #555;
+  line-height: 2.15;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.tags {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  margin-top: 27px;
+}
+
+.tags span {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: 5px 13px;
+  font-size: 12px;
+}
+
+.hero-visual { position: relative; }
+
+.hero-visual img {
+  display: block;
+  width: 100%;
+  height: 495px;
+  object-fit: cover;
+  border-radius: 180px 180px 8px 8px;
+  box-shadow: 0 20px 45px #48345a18;
+}
+
+.sticker {
+  position: absolute;
+  bottom: -14px;
+  left: -25px;
+  background: #fff;
+  border: 1px solid #eee3e7;
+  box-shadow: 0 10px 30px #00000010;
+  border-radius: 7px;
+  padding: 16px 23px;
+}
+
+.sticker strong {
+  display: block;
+  color: var(--gold-dark);
+  font: normal 23px Georgia, serif;
+}
+
+.sticker span {
+  font-size: 11px;
+  color: #777;
+}
+
+/* STATS */
+
+.stats {
+  border-bottom: 1px solid var(--line);
+}
+
+.stats-inner {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.stat {
+  text-align: center;
+  padding: 28px 10px;
+}
+
+.stat + .stat {
+  border-left: 1px solid var(--line);
+}
+
+.stat strong {
+  display: block;
+  font: normal clamp(25px,4vw,37px) Georgia,serif;
+  color: var(--gold-dark);
+}
+
+.stat span {
+  font-size: 12px;
+  color: #666;
+}
+
+/* INTRO */
+
+.intro {
+  text-align: center;
+  max-width: 770px;
+  margin: auto;
+}
+
+.intro h2 {
+  font: normal clamp(25px,4vw,37px)/1.65 Georgia,
+        "Yu Mincho", serif;
+  margin: 0 0 25px;
+}
+
+.intro p {
+  font-size: 15px;
+  line-height: 2.3;
+  color: #555;
+}
+
+.intro strong { color: var(--gold-dark); }
+
+/* PURPOSES */
+
+.purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 24px;
+}
+
+.purpose {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.purpose img {
+  display: block;
+  width: 100%;
+  height: 245px;
+  object-fit: cover;
+}
+
+.purpose-content {
+  padding: 26px 28px 30px;
+}
+
+.purpose .mini {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--gold-dark);
+}
+
+.purpose h3 {
+  font-size: 21px;
+  margin: 8px 0;
+}
+
+.purpose p {
+  font-size: 13px;
+  color: #666;
+  margin: 0;
+}
+
+.purpose ul {
+  font-size: 13px;
+  color: #555;
+  padding-left: 19px;
+  margin-bottom: 0;
+}
+
+/* QUOTE */
+
+.quote {
+  background: linear-gradient(120deg,#f3edf9,#fff0f3);
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.quote p {
+  font: normal clamp(23px,4vw,38px)/1.7 Georgia,
+        "Yu Mincho", serif;
+  margin: 10px 0;
+}
+
+.quote span {
+  font-size: 12px;
+  color: #7b6884;
+  letter-spacing: 2px;
+}
+
+/* LEARNING */
+
+.learn-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.learn-card {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.learn-card .number {
+  font: normal 35px Georgia,serif;
+  color: var(--gold);
+}
+
+.learn-card h3 {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.learn-card p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* PRICE */
+
+.price-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.price-photo {
+  display: block;
+  width: 100%;
+  height: 395px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.price-copy h2 {
+  font: normal clamp(29px,4vw,41px)/1.4 Georgia,serif;
+  margin: 8px 0 16px;
+}
+
+.price-copy p {
+  font-size: 14px;
+  color: #555;
+}
+
+.price-box {
+  background: white;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  padding: 23px;
+  margin: 25px 0;
+}
+
+.price-box strong {
+  display: block;
+  color: var(--gold-dark);
+  font: bold 36px Georgia,serif;
+}
+
+.price-box small {
+  font: normal 12px sans-serif;
+}
+
+.price-box span {
+  font-size: 12px;
+  color: #666;
+}
+
+/* INFORMATION */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.info-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 30px;
+}
+
+.info-card h3 {
+  color: var(--gold-dark);
+  font-size: 19px;
+  margin: 0 0 18px;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+}
+
+.info-row:last-child {
+  border-bottom: 0;
+}
+
+.info-row span { color: #666; }
+
+/* CTA */
+
+.cta {
+  padding: 95px 20px;
+  background: linear-gradient(135deg,#f5f0e5,#f0eaf8);
+  text-align: center;
+}
+
+.cta h2 {
+  font: normal clamp(29px,4vw,43px)/1.6 Georgia,
+        "Yu Mincho", serif;
+  margin: 12px 0 18px;
+}
+
+.cta p {
+  font-size: 14px;
+  color: #555;
+}
+
+.cta .btn {
+  margin: 20px 0 14px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #252525;
+  color: #fff;
+  text-align: center;
+  padding: 55px 20px;
+}
+
+footer .footer-brand {
+  font: bold 24px Georgia,serif;
+  color: var(--gold);
+}
+
+footer .tagline {
+  font: normal 14px Georgia,serif;
+  letter-spacing: 2px;
+  color: #ddd;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+footer a:hover { color: var(--gold); }
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: 25px 0;
+}
+
+footer small { color: #aaa; }
+
+/* MOBILE */
+
+@media (max-width:750px) {
+  header { justify-content: center; }
+
+  header nav {
+    justify-content: center;
+    gap: 11px;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 55px 0 65px;
+  }
+
+  .hero-copy { text-align: center; }
+
+  .hero-actions,
+  .tags { justify-content: center; }
+
+  .hero-visual {
+    width: 90%;
+    margin: auto;
+  }
+
+  .hero-visual img {
+    height: 350px;
+    border-radius: 140px 140px 8px 8px;
+  }
+
+  .sticker { left: -10px; }
+  .section { padding: 65px 0; }
+
+  .purpose-grid,
+  .price-area,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .purpose img { height: 220px; }
+  .learn-grid { grid-template-columns: 1fr; }
+  .price-photo { height: 280px; }
+  .price-area { gap: 25px; }
+  .info-card { padding: 24px 20px; }
+  .stat { padding: 20px 5px; }
+  .stat span { font-size: 10px; }
+  .quote { padding: 55px 20px; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <a class="brand" href="../index.html">
+    <img src="../lovinity-logo.png" alt="Lovinity Academy ロゴ">
+    <span>Lovinity Academy</span>
+  </a>
+
+  <nav>
+    <a href="../index.html#about">ABOUT</a>
+    <a href="../index.html#courses">COURSES</a>
+    <a href="../index.html#why">WHY LOVINITY?</a>
+    <a href="../index.html#prices">PRICE</a>
+    <a href="../index.html#schedule">SCHEDULE</a>
+    <a href="../index.html#trial">TRIAL</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+
+    <div class="hero-copy">
+      <span class="eyebrow">LOVINITY ONLINE KOREAN</span>
+
+      <h1>
+        好きだから、<br>
+        <em>もっと知りたい。</em><br>
+        もっと話したい。
+      </h1>
+
+      <p>
+        推しの言葉を理解したい。<br>
+        韓国旅行でもっと会話したい。<br>
+        韓国で暮らしてみたい。<br>
+        その「好き」を、学びの一歩に。
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#trial">
+          無料体験レッスン →
+        </a>
+
+        <a class="btn btn-outline" href="#purposes">
+          学べる内容を見る
+        </a>
+      </div>
+
+      <div class="tags">
+        <span>初心者歓迎</span>
+        <span>マンツーマン</span>
+        <span>推し活も応援</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img
+        src="https://images.unsplash.com/photo-1548115184-bc6544d06a58?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+        alt="韓国の街並みのイメージ写真"
+        fetchpriority="high"
+        onerror="this.onerror=null;this.src='../course-korean.jpg.PNG';">
+
+      <div class="sticker">
+        <strong>好きが、学ぶ力になる。</strong>
+        <span>Learn Korean, Love More.</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="container stats-inner">
+
+    <div class="stat">
+      <strong>30 min</strong>
+      <span>1回30分</span>
+    </div>
+
+    <div class="stat">
+      <strong>8 lessons</strong>
+      <span>月8回・週2回目安</span>
+    </div>
+
+    <div class="stat">
+      <strong>1 on 1</strong>
+      <span>マンツーマン</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- LEARNING STYLE -->
+<section class="section">
+  <div class="container intro">
+
+    <span class="eyebrow">OUR LEARNING STYLE</span>
+
+    <h2>
+      「好き」から始める韓国語を、<br>
+      毎日の自信につなげよう。
+    </h2>
+
+    <p>
+      Lovinity Academyのオンライン韓国語は、<br>
+      <strong>1回30分・月8回。</strong>
+    </p>
+
+    <p>
+      ハングルを初めて学ぶ方も、
+      もっと会話を楽しみたい方も。<br>
+      一人ひとりの目標に合わせて、
+      基礎から実践まで学びます。
+    </p>
+
+    <p>
+      週2回を目安に学習と復習を繰り返し、<br>
+      韓国語に触れることを
+      日常の習慣にしていきます。
+    </p>
+
+  </div>
+</section>
+
+<!-- PURPOSES -->
+<section class="section cream" id="purposes">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">FIND YOUR MOTIVATION</span>
+      <h2>What Makes You Love Korea?</h2>
+      <div class="gold-line"></div>
+      <p>あなたが韓国語を学びたい理由を、大切に。</p>
+    </div>
+
+    <div class="purpose-grid">
+
+      <!-- K-POP -->
+      <article class="purpose">
+        <img
+          src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+          alt="音楽ライブのイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-korean.jpg.PNG';">
+
+        <div class="purpose-content">
+          <span class="mini">01 / K-POP &amp; FAN LIFE</span>
+          <h3>推し活・K-POP</h3>
+
+          <p>
+            好きなアーティストの言葉を、
+            もっと身近に。
+          </p>
+
+          <ul>
+            <li>配信・インタビューでよく使われる表現</li>
+            <li>ファンレターや応援メッセージ</li>
+            <li>ライブ・ファンイベントで使いたい韓国語</li>
+            <li>韓国ドラマや歌詞の言葉への理解</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- TRAVEL -->
+      <article class="purpose">
+        <img
+          src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+          alt="旅行のイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-korean.jpg.PNG';">
+
+        <div class="purpose-content">
+          <span class="mini">02 / TRAVEL &amp; CONVERSATION</span>
+          <h3>韓国旅行・日常会話</h3>
+
+          <p>
+            次の韓国旅行を、
+            もっと自由に楽しむために。
+          </p>
+
+          <ul>
+            <li>カフェやレストランでの注文</li>
+            <li>買い物・交通・道案内</li>
+            <li>あいさつと自然な日常会話</li>
+            <li>旅先での質問・受け答え</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- BEGINNER -->
+      <article class="purpose">
+        <img
+          src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+          alt="ノートで語学を学ぶイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-korean.jpg.PNG';">
+
+        <div class="purpose-content">
+          <span class="mini">03 / FIRST STEPS</span>
+          <h3>初心者・基礎学習</h3>
+
+          <p>
+            初めてでも大丈夫。
+            ハングルから一歩ずつ。
+          </p>
+
+          <ul>
+            <li>ハングルの読み書き</li>
+            <li>基本の発音・聞き取り</li>
+            <li>初級文法・語彙</li>
+            <li>自己紹介と簡単な会話</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- STUDY ABROAD -->
+      <article class="purpose">
+        <img
+          src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&amp;fit=crop&amp;w=1000&amp;q=85"
+          alt="留学・学習のイメージ写真"
+          loading="lazy"
+          onerror="this.onerror=null;this.src='../course-korean.jpg.PNG';">
+
+        <div class="purpose-content">
+          <span class="mini">04 / STUDY &amp; WORK ABROAD</span>
+          <h3>留学・ワーホリ</h3>
+
+          <p>
+            韓国での新しい暮らしに向けて
+            準備しよう。
+          </p>
+
+          <ul>
+            <li>学校や職場でのコミュニケーション</li>
+            <li>生活に必要な会話表現</li>
+            <li>丁寧な話し方・場面別の言い回し</li>
+            <li>目的に合わせた実践練習</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="note" style="text-align:center;margin-top:20px">
+      ※掲載写真はイメージです。
+      学習内容は目的やレベルに合わせて調整します。
+    </p>
+
+  </div>
+</section>
+
+<!-- FAN LIFE MESSAGE -->
+<div class="quote">
+  <span>FOR YOUR FAVORITE MOMENTS</span>
+
+  <p>
+    字幕なしで、<br>
+    推しの言葉がわかったら。
+  </p>
+
+  <span>その憧れを、学ぶ楽しさに。</span>
+</div>
+
+<!-- LEARNING POINTS -->
+<section class="section" id="learning">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">SMALL STEPS, BIG GROWTH</span>
+      <h2>Learn at Your Pace.</h2>
+      <div class="gold-line"></div>
+      <p>楽しく、着実に。続けやすい3つのポイント。</p>
+    </div>
+
+    <div class="learn-grid">
+
+      <div class="learn-card">
+        <div class="number">01</div>
+        <h3>30分だから続けやすい</h3>
+        <p>
+          忙しい毎日の中でも、
+          短い時間で韓国語に集中できます。
+        </p>
+      </div>
+
+      <div class="learn-card">
+        <div class="number">02</div>
+        <h3>目標に合わせて学べる</h3>
+        <p>
+          推し活も旅行も留学も。
+          興味や目的に合わせて会話を練習します。
+        </p>
+      </div>
+
+      <div class="learn-card">
+        <div class="number">03</div>
+        <h3>自分のペースで質問</h3>
+        <p>
+          マンツーマンだから、
+          わからないことを確認しながら進められます。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="section lavender" id="price">
+  <div class="container price-area">
+
+    <img
+      class="price-photo"
+      src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+      alt="ノートを使った学習のイメージ写真"
+      loading="lazy"
+      onerror="this.onerror=null;this.src='../course-korean.jpg.PNG';">
+
+    <div class="price-copy">
+      <span class="eyebrow">LESSON &amp; PRICE</span>
+
+      <h2>
+        Make Korean<br>
+        Part of Your Life.
+      </h2>
+
+      <p>
+        初心者から経験者まで。
+        年齢を問わず、目標に合わせた
+        マンツーマンレッスン。
+      </p>
+
+      <div class="price-box">
+        <span>オンライン韓国語｜月謝（税込）</span>
+
+        <strong>
+          ¥12,000 <small>/ 月</small>
+        </strong>
+
+        <span>
+          1回30分 × 月8回｜マンツーマン
+        </span>
+      </div>
+
+      <p>
+        週2回を目安に、
+        韓国語に触れる習慣を育てます。
+      </p>
+
+      <a class="btn" href="#trial">
+        無料体験を申し込む →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- LESSON INFORMATION -->
+<section class="section cream" id="schedule">
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="eyebrow">LESSON INFORMATION</span>
+      <h2>Lesson Guide</h2>
+      <div class="gold-line"></div>
+      <p>レッスンの基本情報をご案内します。</p>
+    </div>
+
+    <div class="info-grid">
+
+      <div class="info-card">
+        <h3>レッスン概要</h3>
+
+        <div class="info-row">
+          <strong>対象</strong>
+          <span>年齢を問わず受講可能</span>
+        </div>
+
+        <div class="info-row">
+          <strong>形式</strong>
+          <span>オンライン・マンツーマン</span>
+        </div>
+
+        <div class="info-row">
+          <strong>時間</strong>
+          <span>1回30分</span>
+        </div>
+
+        <div class="info-row">
+          <strong>回数</strong>
+          <span>月8回</span>
+        </div>
+
+        <div class="info-row">
+          <strong>開講時間</strong>
+          <span>
+            月〜土曜日<br>
+            7:00〜22:00
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>受講日時</strong>
+          <span>
+            固定曜日・時間制。
+            講師と調整のうえ決定
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>月謝</strong>
+          <span>12,000円（税込）</span>
+        </div>
+
+        <div class="info-row">
+          <strong>お支払い</strong>
+          <span>PayPay・前月末までの前払い</span>
+        </div>
+
+        <div class="info-row">
+          <strong>無料体験</strong>
+          <span>
+            各コース1回・30分
+            （スクール説明を含む）
+          </span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>欠席・振替について</h3>
+
+        <div class="info-row">
+          <strong>欠席連絡</strong>
+          <span>前日までにご連絡ください。</span>
+        </div>
+
+        <div class="info-row">
+          <strong>振替回数</strong>
+          <span>
+            期限内のご連絡で
+            月2回（30分×2回）まで
+            ご相談いただけます。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>振替期限</strong>
+          <span>
+            当月中を基本とし、
+            最長で翌月末まで。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>講師都合</strong>
+          <span>
+            講師都合による休講は
+            振替で対応します。
+          </span>
+        </div>
+
+        <div class="info-row">
+          <strong>通信障害</strong>
+          <span>
+            原因や状況に応じて
+            個別に対応します。
+          </span>
+        </div>
+
+        <p class="note">
+          受講に関する詳細は、
+          無料体験時にもご案内します。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FREE TRIAL -->
+<section class="cta" id="trial">
+
+  <span class="eyebrow">YOUR FIRST STEP</span>
+
+  <h2>
+    「好き」を、<br>
+    話せる喜びに変えよう。
+  </h2>
+
+  <p>
+    推しの言葉を理解したい方も、<br>
+    韓国旅行や留学に向けて学びたい方も。<br>
+    まずは30分、韓国語に触れてみませんか？
+  </p>
+
+  <a
+    class="btn"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSclvN1PK8gbPtt972mohpEUXd1xJemcz0GTDIUs7WPDaz1Qfg/viewform"
+    target="_blank"
+    rel="noopener noreferrer">
+    無料体験レッスンを申し込む →
+  </a>
+
+  <p class="note">
+    無料体験は各コースお一人様1回まで。<br>
+    レッスンとスクール説明を30分以内に行います。<br>
+    フォーム送信後に日程を調整します。<br>
+    送信時点では予約確定となりません。
+  </p>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+  <span class="footer-brand">
+    Lovinity Academy
+  </span>
+
+  <p class="tagline">
+    Dream, Create, Shine.
+  </p>
+
+  <div class="footer-links">
+    <a href="../index.html">HOME</a>
+    <a href="../index.html#courses">COURSES</a>
+    <a href="../terms.html">受講規約</a>
+    <a href="../privacy.html">プライバシーポリシー</a>
+  </div>
+
+  <p>
+    <a href="mailto:lovinityacademy@gmail.com">
+      lovinityacademy@gmail.com
+    </a>
+  </p>
+
+  <small>© 2026 Lovinity Academy</small>
+
+</footer>
+
+</body>
+</html>
